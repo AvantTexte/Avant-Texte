@@ -1,1 +1,26 @@
-[ { "id": 1, "frances": "guerre", "espanol": "guerra", "tipo": "Sustantivo" }, { "id": 2, "frances": "pilote", "espanol": "piloto", "tipo": "Sustantivo" }, { "id": 3, "frances": "vol", "espanol": "vuelo", "tipo": "Sustantivo" } ]
+[
+  {
+    "id": 1,
+    "frances": "guerre",
+    "espanol": "guerra",
+    "tipo": "Sustantivo"
+  },
+  {
+    "id": 2,
+    "frances": "pilote",
+    "espanol": "piloto",
+    "tipo": "Sustantivo"
+  },
+  {
+    "id": 3,
+    "frances": "vol",
+    "espanol": "vuelo",
+    "tipo": "Sustantivo"
+  },
+  {
+    "id": 1928,
+    "frances": "paix1920",
+    "espanol": "paz #1920",
+    "tipo": "Sustantivo"
+  }
+]
