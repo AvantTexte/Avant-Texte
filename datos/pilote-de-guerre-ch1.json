@@ -1,1 +1,26 @@
-[ { "id": 1, "frances": "guerre", "espanol": "guerra", "tipo": "Sustantivo" }, { "id": 2, "frances": "pilote", "espanol": "piloto", "tipo": "Sustantivo" }, { "id": 3, "frances": "vol", "espanol": "vuelo", "tipo": "Sustantivo" } ]
+[
+  {
+    "id": 1,
+    "frances": "guerre",
+    "espanol": "guerra",
+    "tipo": "Sustantivo"
+  },
+  {
+    "id": 2,
+    "frances": "pilote",
+    "espanol": "piloto",
+    "tipo": "Sustantivo"
+  },
+  {
+    "id": 3,
+    "frances": "vol",
+    "espanol": "vuelo",
+    "tipo": "Sustantivo"
+  },
+  {
+    "id": 296,
+    "frances": "camarade288",
+    "espanol": "camarada #288",
+    "tipo": "Sustantivo"
+  }
+]
