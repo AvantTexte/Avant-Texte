@@ -1,7 +1,9 @@
 {
   "id": 64,
-  "frances": "silence",
-  "espanol": "silencio",
+  "capitulo": "Chapitre 2",
+  "frances": "désastre (n°2)",
+  "espanol": "desastre",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 01:15:18"
+  "ejemplo_frances": "Tout s'écroule autour de nous dans un désastre immense.",
+  "ejemplo_espanol": "Todo se derrumba a nuestro alrededor en un desastre inmenso."
 }
