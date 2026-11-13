@@ -1,53 +1,55 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Avant-Texte | Práctica de Vocabulario</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Liseur - Vocabulaire Français</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div id="container">
-    <header>
-      <h1>Avant-Texte</h1>
-      <p>Aprende vocabulario en francés antes de leer el texto original.</p>
-    </header>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="logo">
+                <span class="flag">🇫🇷</span>
+                <h1>Liseur</h1>
+            </div>
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+            <div class="score-badge" id="score-badge">0 pts</div>
+        </header>
 
-    <section id="selector-box">
-      <label for="chapterSelect"><strong>Seleccionar Lección:</strong></label>
-      <select id="chapterSelect">
-        <option value="datos/pilote-de-guerre-ch1.json">Pilote de guerre - Capítulo 1</option>
-      </select>
-    </section>
+        <!-- Main Card Container -->
+        <main class="card-section">
+            <div class="flashcard" id="flashcard">
+                <div class="card-inner" id="card-inner">
+                    <div class="card-front">
+                        <span class="category-tag">Vocabulaire • Pilote de guerre</span>
+                        <h2 class="french-word" id="word-fr">...</h2>
+                        <button class="audio-btn" id="audio-btn" title="Écouter la prononciation">
+                            🔊
+                        </button>
+                        <p class="hint-text">Toca para ver el significado en español</p>
+                    </div>
+                    <div class="card-back">
+                        <span class="category-tag">Español</span>
+                        <h3 class="spanish-word" id="word-es">...</h3>
+                        <p class="context-sentence" id="context-sentence">...</p>
+                    </div>
+                </div>
+            </div>
 
-    <main id="app">
-      <!-- Tarjeta de Vocabulario (Flashcard) -->
-      <div id="flashcard-box" class="box">
-        <span id="progress-info">Cargando...</span>
-        <h2 id="fr-word">---</h2>
-        <p id="word-type"><em>(-)</em></p>
-        
-        <button id="audio-btn" type="button">🔊 Pronunciar (FR)</button>
+            <!-- Controls -->
+            <div class="controls">
+                <button class="btn btn-secondary" id="prev-btn">⬅️ Anterior</button>
+                <button class="btn btn-audio" id="speak-btn">🗣️ Pronunciar</button>
+                <button class="btn btn-primary" id="next-btn">Siguiente ➡️</button>
+            </div>
+        </main>
+    </div>
 
-        <div class="input-group">
-          <input type="text" id="user-answer" placeholder="Escribe la traducción en español..." autocomplete="off">
-          <button id="check-btn" type="button">Comprobar</button>
-        </div>
-
-        <p id="feedback"></p>
-      </div>
-
-      <!-- Sección de Lectura (Premios al completar la lección) -->
-      <div id="reading-box" class="box" style="display: none;">
-        <h3>¡Felicidades! Lección completada 🎉</h3>
-        <p>Has repasado todo el vocabulario clave. Ahora puedes proceder a leer el texto original en francés.</p>
-      </div>
-    </main>
-
-    <footer>
-      <small>Avant-Texte — Proyecto Abierto | Julianidiego</small>
-    </footer>
-  </div>
-
-  <script src="app.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
