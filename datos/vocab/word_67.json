@@ -1,7 +1,9 @@
 {
   "id": 67,
-  "frances": "vol",
-  "espanol": "vuelo",
+  "capitulo": "Chapitre 2",
+  "frances": "compas (n°2)",
+  "espanol": "compás / brújula",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 01:16:06"
+  "ejemplo_frances": "Je me sers sagement du compas et du rapporteur.",
+  "ejemplo_espanol": "Me sirvo sabiamiente del compás y del transportador."
 }
