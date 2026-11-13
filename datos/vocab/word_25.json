@@ -1,9 +1,9 @@
 {
   "id": 25,
-  "capitulo": "Chapitre XII",
-  "frances": "administration",
-  "espanol": "administración",
+  "capitulo": "Chapitre 1",
+  "frances": "oxygène",
+  "espanol": "oxígeno",
   "tipo": "Sustantivo",
-  "ejemplo_frances": "Nous vivons dans le ventre aveugle d'une administration.",
-  "ejemplo_espanol": "Vivimos en el vientre ciego de una administración."
+  "ejemplo_frances": "Organiser le circuit d'oxygène et de chauffage.",
+  "ejemplo_espanol": "Organizar el circuito de oxígeno y de calefacción."
 }
