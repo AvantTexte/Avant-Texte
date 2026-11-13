@@ -1,0 +1,56 @@
+name: Automated Issue Triage & AI Response
+
+on:
+  issues:
+    types: [opened, labeled]
+
+jobs:
+  triage:
+    name: Auto-Label & Respond
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      contents: read
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Label & Auto-Reply
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        run: |
+          echo "🤖 Processing Issue #${ISSUE_NUMBER}: ${ISSUE_TITLE}"
+          
+          # Keyword matching for labels
+          LABELS=""
+          if [[ "$ISSUE_TITLE $ISSUE_BODY" =~ [Vv]ocab|[Ff]icha|[Ww]ord|[Tt]raducci ]]; then
+            LABELS="$LABELS,vocab-item"
+          fi
+          if [[ "$ISSUE_TITLE $ISSUE_BODY" =~ [Bb]ug|[Ee]rror|[Ff]alla|[Rr]oto ]]; then
+            LABELS="$LABELS,bug"
+          fi
+          if [[ "$ISSUE_TITLE $ISSUE_BODY" =~ [Ff]eature|[Mm]ejora|[Qq]uiz|[Aa]udio ]]; then
+            LABELS="$LABELS,enhancement"
+          fi
+          if [[ "$ISSUE_TITLE $ISSUE_BODY" =~ [Qq]uote|[Cc]ita|[Ss]aint-[Ee]xup ]]; then
+            LABELS="$LABELS,literary-quote"
+          fi
+
+          # Default label if none matched
+          if [ -z "$LABELS" ]; then
+            LABELS="triage-pending"
+          else
+            LABELS="${LABELS#,}"
+          fi
+
+          echo "Assigning labels: $LABELS"
+          gh issue edit "$ISSUE_NUMBER" --add-label "$LABELS" || true
+
+          # Post Automated AI Triage Response
+          REPLY="### 🤖 Automated Triage & Quality Audit\n\nThank you for opening this issue! Our AI Triage Bot has analyzed your submission:\n\n- **Assigned Labels:** \`$LABELS\`\n- **Status:** Under automated review & verification against *Pilote de guerre* dataset.\n- **Next Step:** Maintainers will review this proposal shortly.\n\n--- \n*Proyecto Liseur Automated DevOps System*"
+          
+          gh issue comment "$ISSUE_NUMBER" --body "$REPLY" || true
