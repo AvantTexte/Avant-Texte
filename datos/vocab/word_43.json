@@ -1,7 +1,9 @@
 {
   "id": 43,
-  "frances": "enfance",
-  "espanol": "infancia",
+  "capitulo": "Chapitre 2",
+  "frances": "résistance",
+  "espanol": "resistencia",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 01:09:36"
+  "ejemplo_frances": "Le premier acte de résistance est un acte de foi.",
+  "ejemplo_espanol": "El primer acto de resistencia es un acto de fe."
 }
