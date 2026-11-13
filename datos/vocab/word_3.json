@@ -1,7 +1,9 @@
 {
   "id": 3,
-  "frances": "vol",
-  "espanol": "vuelo",
+  "capitulo": "Chapitre I",
+  "frances": "enfance",
+  "espanol": "infancia",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 00:58:00"
+  "ejemplo_frances": "Je m'enferme avec tant de joie dans cette enfance bien protégée !",
+  "ejemplo_espanol": "¡Me encierro con tanta alegría en esta infancia bien protegida!"
 }
