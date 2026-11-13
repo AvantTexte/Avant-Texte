@@ -1,7 +1,9 @@
 {
   "id": 29,
-  "frances": "secrétaires",
-  "espanol": "secretarios",
+  "capitulo": "Chapitre XVI",
+  "frances": "caravane",
+  "espanol": "caravana",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 01:05:30"
+  "ejemplo_frances": "C'est ainsi que commence de se mettre en marche cette caravane condamnée !",
+  "ejemplo_espanol": "¡Así comienza a ponerse en marcha esta caravana condenada!"
 }
