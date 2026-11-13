@@ -259,5 +259,14 @@
     "tipo": "Sustantivo",
     "ejemplo_frances": "C'est ainsi que commence de se mettre en marche cette caravane condamnée !",
     "ejemplo_espanol": "¡Así comienza a ponerse en marcha esta caravana condenada!"
+  },
+  {
+    "id": 30,
+    "capitulo": "Chapitre XVII",
+    "frances": "résistance",
+    "espanol": "resistencia",
+    "tipo": "Sustantivo",
+    "ejemplo_frances": "Le premier acte de résistance, s'il survient trop tard, est toujours perdant.",
+    "ejemplo_espanol": "El primer acto de resistencia, si ocurre demasiado tarde, siempre es perdedor."
   }
 ]

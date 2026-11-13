@@ -1,7 +1,9 @@
 {
   "id": 30,
-  "frances": "désastre",
-  "espanol": "desastre",
+  "capitulo": "Chapitre XVII",
+  "frances": "résistance",
+  "espanol": "resistencia",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 01:05:53"
+  "ejemplo_frances": "Le premier acte de résistance, s'il survient trop tard, est toujours perdant.",
+  "ejemplo_espanol": "El primer acto de resistencia, si ocurre demasiado tarde, siempre es perdedor."
 }
