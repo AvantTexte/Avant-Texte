@@ -1,0 +1,36 @@
+name: Release Management & Automation
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+jobs:
+  build-release:
+    name: Create & Publish GitHub Release
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Verify Vocabulary Structure
+        run: |
+          python3 -c "import json; index=json.load(open('datos/index.json')); print(f'Total fichas en release: {len(index)}')"
+
+      - name: Create Release Zip
+        run: |
+          zip -r proyecto-liseur-release.zip index.html styles.css app.js datos/
+
+      - name: Publish Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: proyecto-liseur-release.zip
+          generate_release_notes: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
