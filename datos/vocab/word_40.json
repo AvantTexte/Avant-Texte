@@ -1,7 +1,9 @@
 {
   "id": 40,
-  "frances": "camarade",
-  "espanol": "camarada",
+  "capitulo": "Chapitre 2",
+  "frances": "civilisation",
+  "espanol": "civilización",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 01:08:42"
+  "ejemplo_frances": "Une civilisation est un héritage de croyances et de coutumes.",
+  "ejemplo_espanol": "Una civilización es un legado de creencias y costumbres."
 }
