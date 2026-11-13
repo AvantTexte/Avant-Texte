@@ -1,7 +1,9 @@
 {
   "id": 39,
-  "frances": "nuit",
-  "espanol": "noche",
+  "capitulo": "Chapitre 2",
+  "frances": "incendie",
+  "espanol": "incendio",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 01:08:26"
+  "ejemplo_frances": "L'incendie du village équilibre la valeur du souvenir.",
+  "ejemplo_espanol": "El incendio del pueblo equilibra el valor del recuerdo."
 }
