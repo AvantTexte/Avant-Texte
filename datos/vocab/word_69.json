@@ -1,7 +1,9 @@
 {
   "id": 69,
-  "frances": "mission",
-  "espanol": "misión",
-  "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 01:16:41"
+  "capitulo": "Chapitre 2",
+  "frances": "absurde (n°2)",
+  "espanol": "absurdo",
+  "tipo": "Adjetivo",
+  "ejemplo_frances": "C'est la sensation de l'absurde qui domine l'état-major.",
+  "ejemplo_espanol": "Es la sensación de lo absurdo lo que domina el estado mayor."
 }
