@@ -1,7 +1,9 @@
 {
   "id": 54,
-  "frances": "ciel",
-  "espanol": "cielo",
+  "capitulo": "Chapitre 2",
+  "frances": "avion (n°2)",
+  "espanol": "avión",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 01:12:35"
+  "ejemplo_frances": "L'avion vibre sous la puissance de ses deux moteurs.",
+  "ejemplo_espanol": "El avión vibra bajo la potencia de sus dos motores."
 }
