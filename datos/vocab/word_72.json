@@ -1,7 +1,9 @@
 {
   "id": 72,
-  "frances": "camarade",
-  "espanol": "camarada",
+  "capitulo": "Chapitre 2",
+  "frances": "esprit (n°2)",
+  "espanol": "espíritu",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 01:17:30"
+  "ejemplo_frances": "Je suis choqué par une évidence: la vie de l'Esprit est intermittente.",
+  "ejemplo_espanol": "Me choca una evidencia: la vida del Espíritu es intermitente."
 }
