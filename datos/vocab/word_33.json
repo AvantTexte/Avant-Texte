@@ -1,9 +1,9 @@
 {
   "id": 33,
-  "capitulo": "Chapitre XX",
-  "frances": "invulnérable",
-  "espanol": "invulnerable",
-  "tipo": "Adjetivo",
-  "ejemplo_frances": "Je me découvre invulnérable. Je me sens comme vainqueur !",
-  "ejemplo_espanol": "Me descubro invulnerable. ¡Me siento como vencedor!"
+  "capitulo": "Chapitre 1",
+  "frances": "chasseur",
+  "espanol": "caza (avión)",
+  "tipo": "Sustantivo",
+  "ejemplo_frances": "Six chasseurs ennemis surgissent à l'avant-gauche!",
+  "ejemplo_espanol": "¡Seis cazas enemigos surgen al frente a la izquierda!"
 }
