@@ -1,9 +1,9 @@
 {
   "id": 9,
-  "capitulo": "Chapitre II",
-  "frances": "esprit",
-  "espanol": "espíritu / mente",
+  "capitulo": "Chapitre 1",
+  "frances": "soleil",
+  "espanol": "sol",
   "tipo": "Sustantivo",
-  "ejemplo_frances": "Je suis choqué par une évidence: la vie de l'Esprit est intermittente.",
-  "ejemplo_espanol": "Me choca una evidencia: la vida del Espíritu es intermitente."
+  "ejemplo_frances": "Le soleil fait briller la verrière du poste de pilotage.",
+  "ejemplo_espanol": "El sol hace brillar la cúpula de la cabina."
 }
