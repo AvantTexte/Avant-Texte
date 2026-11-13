@@ -1,7 +1,9 @@
 {
   "id": 8,
-  "frances": "camarade",
-  "espanol": "camarada",
+  "capitulo": "Chapitre II",
+  "frances": "angoisse",
+  "espanol": "angustia",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 00:59:19"
+  "ejemplo_frances": "L'angoisse commençait de répandre sur son visage une clarté égale.",
+  "ejemplo_espanol": "La angustia comenzaba a extender sobre su rostro una claridad pareja."
 }
