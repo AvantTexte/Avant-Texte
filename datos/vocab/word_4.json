@@ -1,7 +1,9 @@
 {
   "id": 4,
-  "frances": "avion",
-  "espanol": "avión",
+  "capitulo": "Chapitre I",
+  "frances": "désastre",
+  "espanol": "desastre",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 00:58:16"
+  "ejemplo_frances": "Nous sommes fin mai, en pleine retraite, en plein désastre.",
+  "ejemplo_espanol": "Estamos a fines de mayo, en plena retirada, en pleno desastre."
 }
