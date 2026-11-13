@@ -1,7 +1,9 @@
 {
   "id": 60,
-  "frances": "secours",
-  "espanol": "socorro",
+  "capitulo": "Chapitre 2",
+  "frances": "arbre (n°2)",
+  "espanol": "árbol",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 01:14:16"
+  "ejemplo_frances": "Un arbre centenaire se dresse parmi les ruines.",
+  "ejemplo_espanol": "Un árbol centenario se yergue entre las ruinas."
 }
