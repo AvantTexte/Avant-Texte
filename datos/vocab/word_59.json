@@ -1,7 +1,9 @@
 {
   "id": 59,
-  "frances": "enfance",
-  "espanol": "infancia",
+  "capitulo": "Chapitre 2",
+  "frances": "soleil (n°2)",
+  "espanol": "sol",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 01:13:58"
+  "ejemplo_frances": "Le soleil fait briller la verrière du poste de pilotage.",
+  "ejemplo_espanol": "El sol hace brillar la cúpula de la cabina."
 }
