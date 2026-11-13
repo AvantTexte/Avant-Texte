@@ -1,7 +1,9 @@
 {
   "id": 47,
-  "frances": "ombre",
-  "espanol": "sombra",
+  "capitulo": "Chapitre 2",
+  "frances": "fraternité",
+  "espanol": "fraternidad",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 01:10:40"
+  "ejemplo_frances": "Rien n'abîmera cette fraternité retrouvée dans le danger.",
+  "ejemplo_espanol": "Nada arruinará esta fraternidad reencontrada en el peligro."
 }
