@@ -1,7 +1,9 @@
 {
   "id": 42,
-  "frances": "arbre",
-  "espanol": "árbol",
+  "capitulo": "Chapitre 2",
+  "frances": "caravane",
+  "espanol": "caravana",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 01:09:17"
+  "ejemplo_frances": "C'est ainsi que se met en marche cette caravane condamnée.",
+  "ejemplo_espanol": "Así se pone en marcha esta caravana condenada."
 }
