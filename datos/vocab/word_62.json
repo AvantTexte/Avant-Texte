@@ -1,7 +1,9 @@
 {
   "id": 62,
-  "frances": "désastre",
-  "espanol": "desastre",
+  "capitulo": "Chapitre 2",
+  "frances": "secours (n°2)",
+  "espanol": "socorro",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 01:14:47"
+  "ejemplo_frances": "Lancer un appel de secours dans le chaos de la bataille.",
+  "ejemplo_espanol": "Lanzar una llamada de socorro en el caos de la batalla."
 }
