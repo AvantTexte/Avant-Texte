@@ -1,7 +1,9 @@
 {
   "id": 44,
-  "frances": "secours",
-  "espanol": "socorro",
+  "capitulo": "Chapitre 2",
+  "frances": "sacrifice",
+  "espanol": "sacrificio",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 01:09:52"
+  "ejemplo_frances": "Le sacrifice n'est qu'un don de soi à la communauté.",
+  "ejemplo_espanol": "El sacrificio no es más que un don de sí a la comunidad."
 }
