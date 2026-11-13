@@ -1,9 +1,9 @@
 {
   "id": 2,
-  "capitulo": "Chapitre I",
-  "frances": "compas",
-  "espanol": "compás / brújula",
+  "capitulo": "Chapitre 1",
+  "frances": "pilote",
+  "espanol": "piloto",
   "tipo": "Sustantivo",
-  "ejemplo_frances": "Je me sers sagement du compas, de la règle, du rapporteur.",
-  "ejemplo_espanol": "Me sirvo sabiamiente del compás, de la regla, del transportador."
+  "ejemplo_frances": "Le pilote se retrouve seul face à la nuit et au ciel.",
+  "ejemplo_espanol": "El piloto se encuentra solo ante la noche y el cielo."
 }
