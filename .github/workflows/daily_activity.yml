@@ -1,0 +1,21 @@
+name: Daily Vocabulary Automation
+
+on:
+  schedule:
+    # Se ejecuta automáticamente todos los días a medianoche
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  daily-update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Continuous Learning Ping
+        run: |
+          echo "Ejecución diaria de consistencia: $(date)" >> .github/activity_log.txt
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .github/activity_log.txt
+          git commit -m "chore(cron): Registro diario de actividad continua" || exit 0
+          git push
