@@ -1,7 +1,9 @@
 {
   "id": 52,
-  "frances": "avion",
-  "espanol": "avión",
+  "capitulo": "Chapitre 2",
+  "frances": "pilote (n°2)",
+  "espanol": "piloto",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 01:12:03"
+  "ejemplo_frances": "Le pilote se retrouve seul face à la nuit et au ciel.",
+  "ejemplo_espanol": "El piloto se encuentra solo ante la noche y el cielo."
 }
