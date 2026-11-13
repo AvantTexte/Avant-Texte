@@ -1,7 +1,9 @@
 {
   "id": 13,
-  "frances": "secrétaires",
-  "espanol": "secretarios",
+  "capitulo": "Chapitre III",
+  "frances": "laryngophone",
+  "espanol": "laringófono",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 01:00:41"
+  "ejemplo_frances": "Reste à essayer les laryngophones... M'entendez bien ?",
+  "ejemplo_espanol": "Falta probar los laringófonos... ¿Me oye bien?"
 }
