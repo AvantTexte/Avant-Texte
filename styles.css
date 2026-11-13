@@ -19,50 +19,108 @@ body {
     width: 100%;
     max-width: 550px;
     background: #ffffff;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    border-radius: 24px;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.08);
     border: 2px solid #e5e9f0;
     padding: 24px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 18px;
 }
 
-/* Header */
 .app-header {
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
 }
 
 .logo .flag {
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 .logo h1 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: #3c3c3c;
+}
+
+.user-stats {
+    display: flex;
+    gap: 8px;
+}
+
+.stat-badge {
     font-weight: 800;
-    color: #4b4b4b;
+    font-size: 0.85rem;
+    padding: 6px 12px;
+    border-radius: 20px;
+}
+
+.xp-badge {
+    background-color: #fff3c4;
+    color: #b7791f;
+    border: 1px solid #f6e05e;
+}
+
+.level-badge {
+    background-color: #ebf8ff;
+    color: #2b6cb0;
+    border: 1px solid #bee3f8;
+}
+
+/* Navegación Modos */
+.mode-nav {
+    display: flex;
+    background: #f0f4f8;
+    padding: 4px;
+    border-radius: 14px;
+    gap: 4px;
+}
+
+.nav-btn {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 800;
+    font-size: 0.9rem;
+    cursor: pointer;
+    background: transparent;
+    color: #718096;
+    transition: all 0.2s;
+}
+
+.nav-btn.active {
+    background: #ffffff;
+    color: #1cb0f6;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
 }
 
 .chapter-filter-container {
     display: flex;
     align-items: center;
     gap: 8px;
-    background: #f0f4f8;
-    padding: 8px 14px;
+    background: #f7fafc;
+    padding: 8px 12px;
     border-radius: 12px;
+    border: 1px solid #edf2f7;
 }
 
 .chapter-filter-container label {
-    font-weight: 700;
-    font-size: 0.9rem;
+    font-weight: 800;
+    font-size: 0.85rem;
     color: #4a5568;
 }
 
@@ -75,7 +133,6 @@ body {
     font-weight: 700;
     color: #2d3748;
     outline: none;
-    cursor: pointer;
 }
 
 .progress-bar-container {
@@ -93,17 +150,21 @@ body {
     transition: width 0.4s ease;
 }
 
-/* Flashcard 3D */
-.flashcard-section {
+/* Flashcards */
+.flashcard-section, .quiz-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 16px;
+}
+
+.hidden {
+    display: none !important;
 }
 
 .card-container {
     width: 100%;
-    height: 320px;
+    height: 310px;
     perspective: 1000px;
     cursor: pointer;
 }
@@ -125,7 +186,7 @@ body {
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    border-radius: 16px;
+    border-radius: 20px;
     border: 3px solid #e5e9f0;
     border-bottom: 6px solid #d0d7de;
     padding: 20px;
@@ -134,10 +195,6 @@ body {
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    background: #ffffff;
-}
-
-.card-front {
     background: #ffffff;
 }
 
@@ -178,7 +235,7 @@ body {
 }
 
 .word-es {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     font-weight: 800;
     color: #2b6cb0;
 }
@@ -188,7 +245,6 @@ body {
     font-weight: 800;
     text-transform: uppercase;
     color: #a0aec0;
-    letter-spacing: 1px;
 }
 
 .click-hint {
@@ -207,15 +263,19 @@ body {
     font-weight: 800;
     font-size: 0.95rem;
     cursor: pointer;
-    transition: transform 0.1s, background 0.2s;
 }
 
-.audio-btn:active {
-    transform: translateY(2px);
-    border-bottom: 2px solid #1899d6;
+.audio-btn-sm {
+    background: #ebf8ff;
+    color: #2b6cb0;
+    border: 1px solid #bee3f8;
+    border-radius: 10px;
+    padding: 4px 10px;
+    font-weight: 800;
+    font-size: 0.8rem;
+    cursor: pointer;
 }
 
-/* Quote box */
 .quote-box {
     background: #edf2f7;
     border-left: 4px solid #3182ce;
@@ -246,7 +306,6 @@ body {
     margin-top: 2px;
 }
 
-/* Action Buttons */
 .action-buttons {
     display: flex;
     gap: 15px;
@@ -261,7 +320,6 @@ body {
     font-size: 1rem;
     border: none;
     cursor: pointer;
-    transition: transform 0.1s;
 }
 
 .btn-again {
@@ -276,11 +334,104 @@ body {
     border-bottom: 4px solid #46a302;
 }
 
-.btn:active {
-    transform: translateY(2px);
+/* QUIZ STYLES */
+.quiz-card {
+    width: 100%;
+    background: #ffffff;
+    border: 3px solid #e5e9f0;
+    border-bottom: 6px solid #d0d7de;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
-/* Footer */
+.quiz-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quiz-word {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #2b3a4a;
+    text-align: center;
+}
+
+.quiz-instruction {
+    text-align: center;
+    color: #718096;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.quiz-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.option-btn {
+    background: #ffffff;
+    border: 2px solid #e5e9f0;
+    border-bottom: 4px solid #cbd5e0;
+    border-radius: 12px;
+    padding: 12px;
+    font-weight: 800;
+    font-size: 0.95rem;
+    color: #2d3748;
+    cursor: pointer;
+    transition: all 0.15s;
+    text-align: center;
+}
+
+.option-btn:hover {
+    background: #f7fafc;
+    border-color: #cbd5e0;
+}
+
+.option-btn.correct {
+    background: #d7ffb8 !important;
+    border-color: #58cc02 !important;
+    border-bottom-color: #46a302 !important;
+    color: #2e7d32 !important;
+}
+
+.option-btn.incorrect {
+    background: #ffd8d8 !important;
+    border-color: #ff4b4b !important;
+    border-bottom-color: #ea2b2b !important;
+    color: #c62828 !important;
+}
+
+.quiz-feedback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-top: 10px;
+    border-top: 2px dashed #edf2f7;
+}
+
+#feedback-text {
+    font-weight: 800;
+    font-size: 1.1rem;
+}
+
+.btn-next-quiz {
+    background: #58cc02;
+    color: #ffffff;
+    border: none;
+    border-bottom: 4px solid #46a302;
+    border-radius: 12px;
+    padding: 10px 20px;
+    font-weight: 800;
+    cursor: pointer;
+    width: 100%;
+}
+
 .app-footer {
     text-align: center;
     font-size: 0.85rem;

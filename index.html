@@ -11,9 +11,21 @@
     <div class="app-container">
         <!-- Header -->
         <header class="app-header">
-            <div class="logo">
-                <span class="flag">🇫🇷</span>
-                <h1>Proyecto Liseur</h1>
+            <div class="header-top">
+                <div class="logo">
+                    <span class="flag">🇫🇷</span>
+                    <h1>Proyecto Liseur</h1>
+                </div>
+                <div class="user-stats">
+                    <span class="stat-badge xp-badge">⚡ <span id="user-xp">0</span> XP</span>
+                    <span class="stat-badge level-badge">⭐ Nivel <span id="user-level">1</span></span>
+                </div>
+            </div>
+
+            <!-- Navegación de Modos -->
+            <div class="mode-nav">
+                <button class="nav-btn active" id="btn-mode-cards" onclick="switchMode('cards')">🎴 Tarjetas</button>
+                <button class="nav-btn" id="btn-mode-quiz" onclick="switchMode('quiz')">🎮 Quiz XP</button>
             </div>
             
             <div class="chapter-filter-container">
@@ -28,8 +40,8 @@
             </div>
         </header>
 
-        <!-- Flashcard Area -->
-        <main class="flashcard-section">
+        <!-- VISTA 1: Flashcards -->
+        <main class="flashcard-section" id="section-cards">
             <div class="card-container" id="card-container" onclick="flipCard()">
                 <div class="card-inner" id="card-inner">
                     <!-- Frente (Francés) -->
@@ -45,7 +57,7 @@
                         </button>
                     </div>
 
-                    <!-- Reverso (Español + Frase de la novela) -->
+                    <!-- Reverso (Español + Frase) -->
                     <div class="card-back">
                         <span class="back-title">Traducción en Español:</span>
                         <h3 class="word-es" id="card-es">Cargando...</h3>
@@ -58,14 +70,34 @@
                 </div>
             </div>
 
-            <!-- Botones de Acción -->
             <div class="action-buttons">
                 <button class="btn btn-again" onclick="nextCard(false)">❌ Repasar Luego</button>
-                <button class="btn btn-know" onclick="nextCard(true)">✅ Aprendida</button>
+                <button class="btn btn-know" onclick="nextCard(true)">✅ Aprendida (+5 XP)</button>
             </div>
         </main>
 
-        <!-- Footer Stats -->
+        <!-- VISTA 2: Quiz de Opción Múltiple -->
+        <main class="quiz-section hidden" id="section-quiz">
+            <div class="quiz-card">
+                <div class="quiz-header">
+                    <span class="chapter-badge" id="quiz-chapter">Chapitre I</span>
+                    <button class="audio-btn-sm" onclick="speakQuizWord()">🔊 Escuchar</button>
+                </div>
+                <h2 class="quiz-word" id="quiz-fr">Chargement...</h2>
+                <p class="quiz-instruction">¿Cuál es la traducción correcta al español?</p>
+
+                <div class="quiz-options" id="quiz-options">
+                    <!-- 4 alternativas dinámicas -->
+                </div>
+
+                <div class="quiz-feedback hidden" id="quiz-feedback">
+                    <p id="feedback-text"></p>
+                    <button class="btn btn-next-quiz" onclick="nextQuizQuestion()">Siguiente Pregunta ➔</button>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
         <footer class="app-footer">
             <p>Ficha <span id="current-index">1</span> de <span id="total-cards">0</span> | <strong>Pilote de guerre</strong></p>
         </footer>

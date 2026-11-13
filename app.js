@@ -31,13 +31,30 @@ let vocabulary = [
 let filteredVocabulary = [];
 let currentIndex = 0;
 let isFlipped = false;
+let currentQuizItem = null;
+
+let userXP = parseInt(localStorage.getItem("liseur_xp") || "0");
+let userLevel = Math.floor(userXP / 100) + 1;
 
 document.addEventListener("DOMContentLoaded", () => {
+    updateUserStatsUI();
     filteredVocabulary = [...vocabulary];
     populateChapterDropdown();
     showCard();
     loadVocabulary();
 });
+
+function updateUserStatsUI() {
+    userLevel = Math.floor(userXP / 100) + 1;
+    document.getElementById("user-xp").innerText = userXP;
+    document.getElementById("user-level").innerText = userLevel;
+    localStorage.setItem("liseur_xp", userXP.toString());
+}
+
+function addXP(amount) {
+    userXP += amount;
+    updateUserStatsUI();
+}
 
 async function loadVocabulary() {
     try {
@@ -52,6 +69,18 @@ async function loadVocabulary() {
         }
     } catch (error) {
         console.log("Usando vocabulario precargado.");
+    }
+}
+
+function switchMode(mode) {
+    document.getElementById("btn-mode-cards").classList.toggle("active", mode === "cards");
+    document.getElementById("btn-mode-quiz").classList.toggle("active", mode === "quiz");
+
+    document.getElementById("section-cards").classList.toggle("hidden", mode !== "cards");
+    document.getElementById("section-quiz").classList.toggle("hidden", mode !== "quiz");
+
+    if (mode === "quiz") {
+        setupNextQuizQuestion();
     }
 }
 
@@ -81,6 +110,7 @@ function filterByChapter() {
     isFlipped = false;
     document.getElementById("card-inner").classList.remove("flipped");
     showCard();
+    setupNextQuizQuestion();
 }
 
 function showCard() {
@@ -109,6 +139,7 @@ function flipCard() {
 }
 
 function nextCard(known) {
+    if (known) addXP(5);
     if (isFlipped) {
         flipCard();
         setTimeout(() => advanceCard(), 250);
@@ -123,10 +154,77 @@ function advanceCard() {
     showCard();
 }
 
+/* QUIZ SYSTEM */
+function setupNextQuizQuestion() {
+    if (filteredVocabulary.length === 0) return;
+    
+    currentQuizItem = filteredVocabulary[Math.floor(Math.random() * filteredVocabulary.length)];
+    
+    document.getElementById("quiz-fr").innerText = currentQuizItem.frances;
+    document.getElementById("quiz-chapter").innerText = currentQuizItem.capitulo || "Pilote de guerre";
+    document.getElementById("quiz-feedback").classList.add("hidden");
+
+    // Generar 4 opciones (1 correcta + 3 distractores)
+    let options = [currentQuizItem.espanol];
+    let pool = vocabulary.map(v => v.espanol).filter(e => e !== currentQuizItem.espanol);
+    
+    // Mezclar distractores
+    pool.sort(() => 0.5 - Math.random());
+    options.push(...pool.slice(0, 3));
+    options.sort(() => 0.5 - Math.random());
+
+    const container = document.getElementById("quiz-options");
+    container.innerHTML = "";
+
+    options.forEach(opt => {
+        const btn = document.createElement("button");
+        btn.className = "option-btn";
+        btn.innerText = opt;
+        btn.onclick = () => checkQuizAnswer(btn, opt);
+        container.appendChild(btn);
+    });
+}
+
+function checkQuizAnswer(selectedBtn, chosenText) {
+    const allBtns = document.querySelectorAll(".option-btn");
+    allBtns.forEach(b => b.disabled = true);
+
+    const isCorrect = chosenText === currentQuizItem.espanol;
+    const feedbackText = document.getElementById("feedback-text");
+
+    if (isCorrect) {
+        selectedBtn.classList.add("correct");
+        feedbackText.innerText = "🎉 ¡Excelente! +10 XP";
+        feedbackText.style.color = "#58cc02";
+        addXP(10);
+    } else {
+        selectedBtn.classList.add("incorrect");
+        allBtns.forEach(b => {
+            if (b.innerText === currentQuizItem.espanol) b.classList.add("correct");
+        });
+        feedbackText.innerText = `❌ Respuesta correcta: ${currentQuizItem.espanol}`;
+        feedbackText.style.color = "#ff4b4b";
+    }
+
+    document.getElementById("quiz-feedback").classList.remove("hidden");
+    speakWordText(currentQuizItem.frances);
+}
+
+function nextQuizQuestion() {
+    setupNextQuizQuestion();
+}
+
 function speakWord() {
     if (filteredVocabulary.length === 0) return;
-    const item = filteredVocabulary[currentIndex];
-    const utterance = new SpeechSynthesisUtterance(item.frances);
+    speakWordText(filteredVocabulary[currentIndex].frances);
+}
+
+function speakQuizWord() {
+    if (currentQuizItem) speakWordText(currentQuizItem.frances);
+}
+
+function speakWordText(text) {
+    const utterance = new SpeechSynthesisUtterance(text);
     utterance.lang = "fr-FR";
     utterance.rate = 0.9;
     window.speechSynthesis.speak(utterance);
