@@ -1,7 +1,9 @@
 {
   "id": 10,
-  "frances": "arbre",
-  "espanol": "árbol",
+  "capitulo": "Chapitre II",
+  "frances": "solitude",
+  "espanol": "soledad",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 00:59:51"
+  "ejemplo_frances": "Enveloppé dans ma solitude bien-aimée, afin d'y reconnaître pourquoi je dois mourir.",
+  "ejemplo_espanol": "Envuelto en mi amada soledad, para reconocer en ella por qué debo morir."
 }
