@@ -7,5 +7,14 @@
     "tipo": "Sustantivo",
     "ejemplo_frances": "Des camarades, auprès de moi, parlent à voix basse.",
     "ejemplo_espanol": "Unos camaradas, cerca de mí, hablan en voz baja."
+  },
+  {
+    "id": 2,
+    "capitulo": "Chapitre I",
+    "frances": "compas",
+    "espanol": "compás / brújula",
+    "tipo": "Sustantivo",
+    "ejemplo_frances": "Je me sers sagement du compas, de la règle, du rapporteur.",
+    "ejemplo_espanol": "Me sirvo sabiamiente del compás, de la regla, del transportador."
   }
 ]
