@@ -1,7 +1,9 @@
 {
   "id": 33,
-  "frances": "guerre",
-  "espanol": "guerra",
-  "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 01:06:49"
+  "capitulo": "Chapitre XX",
+  "frances": "invulnérable",
+  "espanol": "invulnerable",
+  "tipo": "Adjetivo",
+  "ejemplo_frances": "Je me découvre invulnérable. Je me sens comme vainqueur !",
+  "ejemplo_espanol": "Me descubro invulnerable. ¡Me siento como vencedor!"
 }
