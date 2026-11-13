@@ -1,7 +1,9 @@
 {
   "id": 45,
-  "frances": "secrétaires",
-  "espanol": "secretarios",
-  "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 01:10:08"
+  "capitulo": "Chapitre 2",
+  "frances": "Arras",
+  "espanol": "Arras",
+  "tipo": "Nombre propio",
+  "ejemplo_frances": "Arras n'est rien d'autre qu'une mèche rouge sur fond bleu.",
+  "ejemplo_espanol": "Arras no es más que una mecha roja sobre fondo azul."
 }
