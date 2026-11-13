@@ -1,7 +1,9 @@
 {
   "id": 14,
-  "frances": "désastre",
-  "espanol": "desastre",
+  "capitulo": "Chapitre V",
+  "frances": "altitude",
+  "espanol": "altitud",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 01:00:56"
+  "ejemplo_frances": "Nous montons vite : six mille sept cents mètres d'altitude.",
+  "ejemplo_espanol": "Subimos rápido: seis mil setecientos metros de altitud."
 }
