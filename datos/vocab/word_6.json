@@ -1,9 +1,9 @@
 {
   "id": 6,
-  "capitulo": "Chapitre I",
-  "frances": "absurde",
-  "espanol": "absurdo",
-  "tipo": "Adjetivo",
-  "ejemplo_frances": "C'est celle de l'absurde. Tout craque autour de nous.",
-  "ejemplo_espanol": "Es la impresión de lo absurdo. Todo cruje a nuestro alrededor."
+  "capitulo": "Chapitre 1",
+  "frances": "ciel",
+  "espanol": "cielo",
+  "tipo": "Sustantivo",
+  "ejemplo_frances": "Le ciel au-dessus de la France s'emplit de feu.",
+  "ejemplo_espanol": "El cielo sobre Francia se llena de fuego."
 }
