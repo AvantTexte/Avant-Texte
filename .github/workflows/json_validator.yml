@@ -1,0 +1,45 @@
+name: JSON Schema & Syntax Validator
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'datos/**.json'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'datos/**.json'
+
+jobs:
+  validate-json:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Validate All Vocabulary JSON Files
+        run: |
+          python3 -c '
+          import glob, json, sys
+          files = glob.glob("datos/**/*.json", recursive=True) + glob.glob("datos/*.json")
+          errors = 0
+          for f in files:
+              try:
+                  with open(f, "r", encoding="utf-8") as file:
+                      data = json.load(file)
+                      if not isinstance(data, (dict, list)):
+                          print(f"❌ {f}: Root element must be JSON object or array.")
+                          errors += 1
+              except Exception as e:
+                  print(f"❌ {f}: Invalid JSON -> {e}")
+                  errors += 1
+          if errors > 0:
+              print(f"Validation failed with {errors} error(s).")
+              sys.exit(1)
+          print(f"✅ Successfully validated {len(files)} JSON file(s).")
+          '

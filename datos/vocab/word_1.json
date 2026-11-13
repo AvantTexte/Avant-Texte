@@ -1,7 +1,9 @@
 {
   "id": 1,
-  "frances": "guerre",
-  "espanol": "guerra",
+  "capitulo": "Chapitre I",
+  "frances": "camarade",
+  "espanol": "camarada / compañero",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 00:57:28"
+  "ejemplo_frances": "Des camarades, auprès de moi, parlent à voix basse.",
+  "ejemplo_espanol": "Unos camaradas, cerca de mí, hablan en voz baja."
 }

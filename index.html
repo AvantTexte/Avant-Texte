@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto Liseur - Vocabulaire Français</title>
+    <title>Proyecto Liseur - Francés con Pilote de guerre</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="app-container">
@@ -13,41 +13,56 @@
         <header class="app-header">
             <div class="logo">
                 <span class="flag">🇫🇷</span>
-                <h1>Liseur</h1>
+                <h1>Proyecto Liseur</h1>
+            </div>
+            <!-- Filtro de Capítulos -->
+            <div class="chapter-filter-container">
+                <label for="chapter-select">📖 Capítulo:</label>
+                <select id="chapter-select" onchange="filterByChapter()">
+                    <option value="ALL">Todos los Capítulos</option>
+                </select>
             </div>
             <div class="progress-bar-container">
                 <div class="progress-bar" id="progress-bar"></div>
             </div>
-            <div class="score-badge" id="score-badge">0 pts</div>
         </header>
 
-        <!-- Main Card Container -->
-        <main class="card-section">
-            <div class="flashcard" id="flashcard">
+        <!-- Main Content Area -->
+        <main class="flashcard-section">
+            <div class="card-container" id="card-container" onclick="flipCard()">
                 <div class="card-inner" id="card-inner">
+                    <!-- Frente (Francés) -->
                     <div class="card-front">
-                        <span class="category-tag">Vocabulaire • Pilote de guerre</span>
-                        <h2 class="french-word" id="word-fr">...</h2>
-                        <button class="audio-btn" id="audio-btn" title="Écouter la prononciation">
-                            🔊
+                        <span class="chapter-badge" id="card-chapter">Chapitre I</span>
+                        <span class="badge" id="card-type">Sustantivo</span>
+                        <h2 class="word-fr" id="card-fr">Chargement...</h2>
+                        <p class="click-hint">Haz clic para ver traducción 🔄</p>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakWord();">
+                            🔊 Escuchar
                         </button>
-                        <p class="hint-text">Toca para ver el significado en español</p>
                     </div>
+                    <!-- Reverso (Español + Frase de la novela) -->
                     <div class="card-back">
-                        <span class="category-tag">Español</span>
-                        <h3 class="spanish-word" id="word-es">...</h3>
-                        <p class="context-sentence" id="context-sentence">...</p>
+                        <h3 class="word-es" id="card-es">Cargando...</h3>
+                        <div class="quote-box">
+                            <p class="quote-fr" id="quote-fr">""</p>
+                            <p class="quote-es" id="quote-es">""</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Controls -->
-            <div class="controls">
-                <button class="btn btn-secondary" id="prev-btn">⬅️ Anterior</button>
-                <button class="btn btn-audio" id="speak-btn">🗣️ Pronunciar</button>
-                <button class="btn btn-primary" id="next-btn">Siguiente ➡️</button>
+            <!-- Botones de Acción -->
+            <div class="action-buttons">
+                <button class="btn btn-again" onclick="nextCard(false)">❌ Repasar luego</button>
+                <button class="btn btn-know" onclick="nextCard(true)">✅ La conozco</button>
             </div>
         </main>
+
+        <!-- Footer Stats -->
+        <footer class="app-footer">
+            <p>Ficha <span id="current-index">1</span> de <span id="total-cards">0</span> | <span id="chapter-name">Pilote de guerre</span></p>
+        </footer>
     </div>
 
     <script src="app.js"></script>

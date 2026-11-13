@@ -1,103 +1,100 @@
 let vocabulary = [];
+let filteredVocabulary = [];
 let currentIndex = 0;
-let points = 0;
+let isFlipped = false;
 
-// Carga vocabulario dinámicamente desde datos/vocab/ o fallback
+document.addEventListener("DOMContentLoaded", () => {
+    loadVocabulary();
+});
+
 async function loadVocabulary() {
     try {
-        // Intentar cargar índice o fichas individuales
-        const sampleWords = [
-            { fr: "guerre", es: "guerra", context: "Pilote de guerre est un récit de 1942." },
-            { fr: "camarade", es: "camarada", context: "Mes camarades de l'escadrille 2/33." },
-            { fr: "vol", es: "vuelo", context: "Le vol au-dessus de Arras." },
-            { fr: "espoir", es: "esperanza", context: "Garder l'espoir malgré la défaite." },
-            { fr: "devoir", es: "deber", context: "Accomplir son devoir jusqu'au bout." }
-        ];
-
-        // Cargar desde JSONs si existen
-        for (let i = 1; i <= 20; i++) {
-            try {
-                const res = await fetch(`datos/vocab/word_${i}.json`);
-                if (res.ok) {
-                    const data = await res.json();
-                    if (data && data.palabra_frances) {
-                        vocabulary.push({
-                            fr: data.palabra_frances,
-                            es: data.traduccion_espanol || data.significado,
-                            context: data.contexto || ""
-                        });
-                    }
-                }
-            } catch (e) {}
-        }
-
-        if (vocabulary.length === 0) {
-            vocabulary = sampleWords;
-        }
-    } catch (err) {
-        console.warn("Usando datos de respaldo:", err);
+        const response = await fetch("datos/index.json");
+        if (!response.ok) throw new Error("Index no encontrado");
+        vocabulary = await response.json();
+        
+        populateChapterDropdown();
+        filterByChapter();
+    } catch (error) {
+        console.error("Error al cargar el vocabulario:", error);
+        document.getElementById("card-fr").innerText = "Guerre";
+        document.getElementById("card-es").innerText = "Guerra";
     }
-    
-    renderCard();
 }
 
-function renderCard() {
-    if (vocabulary.length === 0) return;
-    const current = vocabulary[currentIndex];
+function populateChapterDropdown() {
+    const select = document.getElementById("chapter-select");
+    const chapters = [...new Set(vocabulary.map(item => item.capitulo || "Chapitre I"))];
     
-    document.getElementById('word-fr').textContent = current.fr;
-    document.getElementById('word-es').textContent = current.es;
-    document.getElementById('context-sentence').textContent = current.context ? `"${current.context}"` : '';
-    
-    const card = document.getElementById('flashcard');
-    card.classList.remove('flipped');
+    select.innerHTML = '<option value="ALL">Todos los Capítulos (' + vocabulary.length + ' palabras)</option>';
+    chapters.forEach(chap => {
+        const count = vocabulary.filter(i => (i.capitulo || "Chapitre I") === chap).length;
+        const opt = document.createElement("option");
+        opt.value = chap;
+        opt.textContent = `${chap} (${count} palabras)`;
+        select.appendChild(opt);
+    });
+}
 
-    // Actualizar barra de progreso
-    const progressPercent = ((currentIndex + 1) / vocabulary.length) * 100;
-    document.getElementById('progress-bar').style.width = `${progressPercent}%`;
+function filterByChapter() {
+    const selected = document.getElementById("chapter-select").value;
+    if (selected === "ALL") {
+        filteredVocabulary = [...vocabulary];
+    } else {
+        filteredVocabulary = vocabulary.filter(item => item.capitulo === selected);
+    }
+    
+    currentIndex = 0;
+    isFlipped = false;
+    document.getElementById("card-inner").classList.remove("flipped");
+    showCard();
+}
+
+function showCard() {
+    if (filteredVocabulary.length === 0) return;
+    
+    const item = filteredVocabulary[currentIndex];
+    
+    document.getElementById("card-fr").innerText = item.frances;
+    document.getElementById("card-es").innerText = item.espanol;
+    document.getElementById("card-type").innerText = item.tipo || "Vocabulario";
+    document.getElementById("card-chapter").innerText = item.capitulo || "Pilote de guerre";
+    
+    document.getElementById("quote-fr").innerText = item.ejemplo_frances ? `"${item.ejemplo_frances}"` : "";
+    document.getElementById("quote-es").innerText = item.ejemplo_espanol ? `"${item.ejemplo_espanol}"` : "";
+    
+    document.getElementById("current-index").innerText = currentIndex + 1;
+    document.getElementById("total-cards").innerText = filteredVocabulary.length;
+    
+    const progressPercent = ((currentIndex + 1) / filteredVocabulary.length) * 100;
+    document.getElementById("progress-bar").style.width = `${progressPercent}%`;
+}
+
+function flipCard() {
+    isFlipped = !isFlipped;
+    document.getElementById("card-inner").classList.toggle("flipped", isFlipped);
+}
+
+function nextCard(known) {
+    if (isFlipped) {
+        flipCard();
+        setTimeout(() => advanceCard(), 250);
+    } else {
+        advanceCard();
+    }
+}
+
+function advanceCard() {
+    if (filteredVocabulary.length === 0) return;
+    currentIndex = (currentIndex + 1) % filteredVocabulary.length;
+    showCard();
 }
 
 function speakWord() {
-    if (vocabulary.length === 0) return;
-    const currentWord = vocabulary[currentIndex].fr;
-    if ('speechSynthesis' in window) {
-        window.speechSynthesis.cancel();
-        const utterance = new SpeechSynthesisUtterance(currentWord);
-        utterance.lang = 'fr-FR';
-        utterance.rate = 0.9;
-        window.speechSynthesis.speak(utterance);
-    }
+    if (filteredVocabulary.length === 0) return;
+    const item = filteredVocabulary[currentIndex];
+    const utterance = new SpeechSynthesisUtterance(item.frances);
+    utterance.lang = "fr-FR";
+    utterance.rate = 0.9;
+    window.speechSynthesis.speak(utterance);
 }
-
-// Event Listeners
-document.getElementById('flashcard').addEventListener('click', () => {
-    document.getElementById('flashcard').classList.toggle('flipped');
-});
-
-document.getElementById('audio-btn').addEventListener('click', (e) => {
-    e.stopPropagation();
-    speakWord();
-});
-
-document.getElementById('speak-btn').addEventListener('click', () => {
-    speakWord();
-});
-
-document.getElementById('next-btn').addEventListener('click', () => {
-    if (currentIndex < vocabulary.length - 1) {
-        currentIndex++;
-        points += 10;
-        document.getElementById('score-badge').textContent = `${points} pts`;
-        renderCard();
-    }
-});
-
-document.getElementById('prev-btn').addEventListener('click', () => {
-    if (currentIndex > 0) {
-        currentIndex--;
-        renderCard();
-    }
-});
-
-// Inicializar al cargar la página
-document.addEventListener('DOMContentLoaded', loadVocabulary);
