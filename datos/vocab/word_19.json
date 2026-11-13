@@ -1,7 +1,9 @@
 {
   "id": 19,
-  "frances": "vol",
-  "espanol": "vuelo",
-  "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 01:02:17"
+  "capitulo": "Chapitre VII",
+  "frances": "sourire",
+  "espanol": "sonrisa / sonreír",
+  "tipo": "Sustantivo / Verbo",
+  "ejemplo_frances": "Je la vois sourire, tout simplement.",
+  "ejemplo_espanol": "La veo sonreír, simplemente."
 }
