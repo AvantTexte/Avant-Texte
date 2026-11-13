@@ -1,7 +1,9 @@
 {
   "id": 50,
-  "frances": "pilote",
-  "espanol": "piloto",
+  "capitulo": "Chapitre 2",
+  "frances": "patrie",
+  "espanol": "patria",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 01:11:32"
+  "ejemplo_frances": "La patrie n'est pas une masse de terres, c'est un esprit.",
+  "ejemplo_espanol": "La patria no es una masa de tierras, es un espíritu."
 }
