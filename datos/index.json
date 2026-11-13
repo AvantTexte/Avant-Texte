@@ -160,5 +160,14 @@
     "tipo": "Sustantivo",
     "ejemplo_frances": "Il n'est, dans la défaite, aucun espoir d'exaltation.",
     "ejemplo_espanol": "En la derrota no hay ninguna esperanza de exaltación."
+  },
+  {
+    "id": 19,
+    "capitulo": "Chapitre VII",
+    "frances": "sourire",
+    "espanol": "sonrisa / sonreír",
+    "tipo": "Sustantivo / Verbo",
+    "ejemplo_frances": "Je la vois sourire, tout simplement.",
+    "ejemplo_espanol": "La veo sonreír, simplemente."
   }
 ]
