@@ -1,7 +1,9 @@
 {
   "id": 46,
-  "frances": "désastre",
-  "espanol": "desastre",
-  "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 01:10:23"
+  "capitulo": "Chapitre 2",
+  "frances": "invulnérable",
+  "espanol": "invulnerable",
+  "tipo": "Adjetivo",
+  "ejemplo_frances": "Je me découvre invulnérable au cœur du brasier.",
+  "ejemplo_espanol": "Me descubro invulnerable en el corazón de la hoguera."
 }
