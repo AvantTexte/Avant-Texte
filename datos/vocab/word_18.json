@@ -1,7 +1,9 @@
 {
   "id": 18,
-  "frances": "pilote",
-  "espanol": "piloto",
+  "capitulo": "Chapitre VII",
+  "frances": "exaltation",
+  "espanol": "exaltación",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 01:02:00"
+  "ejemplo_frances": "Il n'est, dans la défaite, aucun espoir d'exaltation.",
+  "ejemplo_espanol": "En la derrota no hay ninguna esperanza de exaltación."
 }

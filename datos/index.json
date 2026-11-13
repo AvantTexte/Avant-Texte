@@ -151,5 +151,14 @@
     "tipo": "Sustantivo",
     "ejemplo_frances": "A la façon d'un vieux cheval qui se méfierait de l'obstacle.",
     "ejemplo_espanol": "A la manera de un caballo viejo que recelaría del obstáculo."
+  },
+  {
+    "id": 18,
+    "capitulo": "Chapitre VII",
+    "frances": "exaltation",
+    "espanol": "exaltación",
+    "tipo": "Sustantivo",
+    "ejemplo_frances": "Il n'est, dans la défaite, aucun espoir d'exaltation.",
+    "ejemplo_espanol": "En la derrota no hay ninguna esperanza de exaltación."
   }
 ]
