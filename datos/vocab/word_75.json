@@ -1,7 +1,9 @@
 {
   "id": 75,
-  "frances": "enfance",
-  "espanol": "infancia",
+  "capitulo": "Chapitre 3",
+  "frances": "oxygène (n°2)",
+  "espanol": "oxígeno",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 01:18:21"
+  "ejemplo_frances": "Organiser le circuit d'oxygène et de chauffage.",
+  "ejemplo_espanol": "Organizar el circuito de oxígeno y de calefacción."
 }
