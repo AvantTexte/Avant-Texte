@@ -43,5 +43,14 @@
     "tipo": "Sustantivo",
     "ejemplo_frances": "Nous sommes encore cinquante équipages de Grande Reconnaissance.",
     "ejemplo_espanol": "Aún somos cincuenta tripulaciones de Gran Reconocimiento."
+  },
+  {
+    "id": 6,
+    "capitulo": "Chapitre I",
+    "frances": "absurde",
+    "espanol": "absurdo",
+    "tipo": "Adjetivo",
+    "ejemplo_frances": "C'est celle de l'absurde. Tout craque autour de nous.",
+    "ejemplo_espanol": "Es la impresión de lo absurdo. Todo cruje a nuestro alrededor."
   }
 ]

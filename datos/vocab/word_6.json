@@ -1,7 +1,9 @@
 {
   "id": 6,
-  "frances": "ciel",
-  "espanol": "cielo",
-  "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 00:58:47"
+  "capitulo": "Chapitre I",
+  "frances": "absurde",
+  "espanol": "absurdo",
+  "tipo": "Adjetivo",
+  "ejemplo_frances": "C'est celle de l'absurde. Tout craque autour de nous.",
+  "ejemplo_espanol": "Es la impresión de lo absurdo. Todo cruje a nuestro alrededor."
 }
