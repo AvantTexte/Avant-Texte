@@ -1,7 +1,9 @@
 {
   "id": 2,
-  "frances": "pilote",
-  "espanol": "piloto",
+  "capitulo": "Chapitre I",
+  "frances": "compas",
+  "espanol": "compás / brújula",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 00:57:44"
+  "ejemplo_frances": "Je me sers sagement du compas, de la règle, du rapporteur.",
+  "ejemplo_espanol": "Me sirvo sabiamiente del compás, de la regla, del transportador."
 }
