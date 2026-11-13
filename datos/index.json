@@ -52,5 +52,14 @@
     "tipo": "Adjetivo",
     "ejemplo_frances": "C'est celle de l'absurde. Tout craque autour de nous.",
     "ejemplo_espanol": "Es la impresión de lo absurdo. Todo cruje a nuestro alrededor."
+  },
+  {
+    "id": 7,
+    "capitulo": "Chapitre II",
+    "frances": "prudence",
+    "espanol": "prudencia",
+    "tipo": "Sustantivo",
+    "ejemplo_frances": "On lui avait tellement parlé de la prudence juive.",
+    "ejemplo_espanol": "Le habían hablado tanto de la prudencia judía."
   }
 ]
