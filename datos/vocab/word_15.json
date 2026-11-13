@@ -1,7 +1,9 @@
 {
   "id": 15,
-  "frances": "ombre",
-  "espanol": "sombra",
+  "capitulo": "Chapitre V",
+  "frances": "mitrailleuse",
+  "espanol": "ametralladora",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 01:01:13"
+  "ejemplo_frances": "J'appuie le bouton en vue du contrôle de mes mitrailleuses.",
+  "ejemplo_espanol": "Presiono el botón para controlar mis ametralladoras."
 }
