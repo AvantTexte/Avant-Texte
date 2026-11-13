@@ -142,5 +142,14 @@
     "tipo": "Sustantivo",
     "ejemplo_frances": "Le volant est dur ; quant au palonnier, il est entièrement coincé !",
     "ejemplo_espanol": "¡El volante está duro; en cuanto al pedal del timón, está totalmente atascado!"
+  },
+  {
+    "id": 17,
+    "capitulo": "Chapitre VI",
+    "frances": "obstacle",
+    "espanol": "obstáculo",
+    "tipo": "Sustantivo",
+    "ejemplo_frances": "A la façon d'un vieux cheval qui se méfierait de l'obstacle.",
+    "ejemplo_espanol": "A la manera de un caballo viejo que recelaría del obstáculo."
   }
 ]

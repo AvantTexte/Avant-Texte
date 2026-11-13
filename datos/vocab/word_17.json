@@ -1,7 +1,9 @@
 {
   "id": 17,
-  "frances": "guerre",
-  "espanol": "guerra",
+  "capitulo": "Chapitre VI",
+  "frances": "obstacle",
+  "espanol": "obstáculo",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 01:01:43"
+  "ejemplo_frances": "A la façon d'un vieux cheval qui se méfierait de l'obstacle.",
+  "ejemplo_espanol": "A la manera de un caballo viejo que recelaría del obstáculo."
 }
