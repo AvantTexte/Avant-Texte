@@ -196,5 +196,14 @@
     "tipo": "Sustantivo",
     "ejemplo_frances": "Mon genou a été accroché au cours du saut en parachute.",
     "ejemplo_espanol": "Mi rodilla se enganchó durante el salto en paracaídas."
+  },
+  {
+    "id": 23,
+    "capitulo": "Chapitre X",
+    "frances": "brouillard",
+    "espanol": "niebla",
+    "tipo": "Sustantivo",
+    "ejemplo_frances": "Ces étages de bulles lumineuses qui montent avec la lenteur de voiles de brouillard.",
+    "ejemplo_espanol": "Esa sucesión de burbujas luminosas que suben con la lentitud de velos de niebla."
   }
 ]
