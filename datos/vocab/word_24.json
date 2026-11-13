@@ -1,7 +1,9 @@
 {
   "id": 24,
-  "frances": "camarade",
-  "espanol": "camarada",
+  "capitulo": "Chapitre XI",
+  "frances": "fécondité",
+  "espanol": "fecundidad / calor fecundo",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 01:03:53"
+  "ejemplo_frances": "J'y goûtais la béatitude du repos après les journées dures.",
+  "ejemplo_espanol": "Apaladeaba allí la beatitud del descanso tras las jornadas duras."
 }
