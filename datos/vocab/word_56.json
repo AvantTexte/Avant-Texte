@@ -1,7 +1,9 @@
 {
   "id": 56,
-  "frances": "camarade",
-  "espanol": "camarada",
+  "capitulo": "Chapitre 2",
+  "frances": "ciel (n°2)",
+  "espanol": "cielo",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 01:13:08"
+  "ejemplo_frances": "Le ciel au-dessus de la France s'emplit de feu.",
+  "ejemplo_espanol": "El cielo sobre Francia se llena de fuego."
 }
