@@ -1,7 +1,9 @@
 {
   "id": 9,
-  "frances": "soleil",
-  "espanol": "sol",
+  "capitulo": "Chapitre II",
+  "frances": "esprit",
+  "espanol": "espíritu / mente",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 00:59:34"
+  "ejemplo_frances": "Je suis choqué par une évidence: la vie de l'Esprit est intermittente.",
+  "ejemplo_espanol": "Me choca una evidencia: la vida del Espíritu es intermitente."
 }
