@@ -1,7 +1,9 @@
 {
   "id": 32,
-  "frances": "silence",
-  "espanol": "silencio",
-  "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 01:06:30"
+  "capitulo": "Chapitre XIX",
+  "frances": "Arras",
+  "espanol": "Arras (Ciudad escenario del vuelo de reconocimiento)",
+  "tipo": "Nombre propio",
+  "ejemplo_frances": "Arras n'est rien d'autre qu'une mèche rouge sur fond bleu de nuit.",
+  "ejemplo_espanol": "Arras no es otra cosa que una mecha roja sobre fondo azul noche."
 }
