@@ -106,5 +106,14 @@
     "tipo": "Sustantivo",
     "ejemplo_frances": "D'organiser le circuit d'oxygène, le circuit de chauffage.",
     "ejemplo_espanol": "Organizar el circuito de oxígeno, el circuito de calefacción."
+  },
+  {
+    "id": 13,
+    "capitulo": "Chapitre III",
+    "frances": "laryngophone",
+    "espanol": "laringófono",
+    "tipo": "Sustantivo",
+    "ejemplo_frances": "Reste à essayer les laryngophones... M'entendez bien ?",
+    "ejemplo_espanol": "Falta probar los laringófonos... ¿Me oye bien?"
   }
 ]
