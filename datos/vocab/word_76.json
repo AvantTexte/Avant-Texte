@@ -1,7 +1,9 @@
 {
   "id": 76,
-  "frances": "secours",
-  "espanol": "socorro",
+  "capitulo": "Chapitre 3",
+  "frances": "laryngophone (n°2)",
+  "espanol": "laringófono",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 01:18:37"
+  "ejemplo_frances": "Reste à essayer les laryngophones: M'entendez-vous?",
+  "ejemplo_espanol": "Falta probar los laringófonos: ¿Me oye usted?"
 }
