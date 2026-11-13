@@ -1,7 +1,9 @@
 {
   "id": 70,
-  "frances": "ciel",
-  "espanol": "cielo",
+  "capitulo": "Chapitre 2",
+  "frances": "prudence (n°2)",
+  "espanol": "prudencia",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 01:16:57"
+  "ejemplo_frances": "On lui avait tellement parlé de la prudence juive.",
+  "ejemplo_espanol": "Le habían hablado tanto de la prudencia judía."
 }
