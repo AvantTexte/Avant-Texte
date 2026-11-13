@@ -1,7 +1,9 @@
 {
   "id": 55,
-  "frances": "nuit",
-  "espanol": "noche",
+  "capitulo": "Chapitre 2",
+  "frances": "mission (n°2)",
+  "espanol": "misión",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 01:12:53"
+  "ejemplo_frances": "On nous commande une mission sacrifiée.",
+  "ejemplo_espanol": "Nos ordenan una misión sacrificada."
 }
