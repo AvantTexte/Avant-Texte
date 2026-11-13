@@ -1,7 +1,9 @@
 {
   "id": 58,
-  "frances": "arbre",
-  "espanol": "árbol",
+  "capitulo": "Chapitre 2",
+  "frances": "camarade (n°2)",
+  "espanol": "camarada",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 01:13:43"
+  "ejemplo_frances": "Des camarades, auprès de moi, parlent à voix basse.",
+  "ejemplo_espanol": "Unos camaradas, cerca de mí, hablan en voz baja."
 }
