@@ -1,7 +1,9 @@
 {
   "id": 63,
-  "frances": "ombre",
-  "espanol": "sombra",
+  "capitulo": "Chapitre 2",
+  "frances": "secrétaires (n°2)",
+  "espanol": "secretarios",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 01:15:03"
+  "ejemplo_frances": "Les secrétaires rédigent patiemment les ordres du groupe.",
+  "ejemplo_espanol": "Los secretarios redactan pacientemente las órdenes del grupo."
 }
