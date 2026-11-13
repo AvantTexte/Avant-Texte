@@ -1,7 +1,9 @@
 {
   "id": 27,
-  "frances": "enfance",
-  "espanol": "infancia",
+  "capitulo": "Chapitre XIV",
+  "frances": "civilisation",
+  "espanol": "civilización",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 01:04:50"
+  "ejemplo_frances": "Une civilisation est un héritage de croyances, de coutumes et de connaissances.",
+  "ejemplo_espanol": "Una civilización es un legado de creencias, costumbres y conocimientos."
 }
