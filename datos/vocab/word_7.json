@@ -1,9 +1,9 @@
 {
   "id": 7,
-  "capitulo": "Chapitre II",
-  "frances": "prudence",
-  "espanol": "prudencia",
+  "capitulo": "Chapitre 1",
+  "frances": "nuit",
+  "espanol": "noche",
   "tipo": "Sustantivo",
-  "ejemplo_frances": "On lui avait tellement parlé de la prudence juive.",
-  "ejemplo_espanol": "Le habían hablado tanto de la prudencia judía."
+  "ejemplo_frances": "La nuit descend douce et grave sur le terrain.",
+  "ejemplo_espanol": "La noche desciende suave y grave sobre el campo."
 }
