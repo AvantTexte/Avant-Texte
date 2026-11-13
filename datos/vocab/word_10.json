@@ -1,9 +1,9 @@
 {
   "id": 10,
-  "capitulo": "Chapitre II",
-  "frances": "solitude",
-  "espanol": "soledad",
+  "capitulo": "Chapitre 1",
+  "frances": "arbre",
+  "espanol": "árbol",
   "tipo": "Sustantivo",
-  "ejemplo_frances": "Enveloppé dans ma solitude bien-aimée, afin d'y reconnaître pourquoi je dois mourir.",
-  "ejemplo_espanol": "Envuelto en mi amada soledad, para reconocer en ella por qué debo morir."
+  "ejemplo_frances": "Un arbre centenaire se dresse parmi les ruines.",
+  "ejemplo_espanol": "Un árbol centenario se yergue entre las ruinas."
 }
