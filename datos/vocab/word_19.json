@@ -1,9 +1,9 @@
 {
   "id": 19,
-  "capitulo": "Chapitre VII",
-  "frances": "sourire",
-  "espanol": "sonrisa / sonreír",
-  "tipo": "Sustantivo / Verbo",
-  "ejemplo_frances": "Je la vois sourire, tout simplement.",
-  "ejemplo_espanol": "La veo sonreír, simplemente."
+  "capitulo": "Chapitre 1",
+  "frances": "absurde",
+  "espanol": "absurdo",
+  "tipo": "Adjetivo",
+  "ejemplo_frances": "C'est la sensation de l'absurde qui domine l'état-major.",
+  "ejemplo_espanol": "Es la sensación de lo absurdo lo que domina el estado mayor."
 }
