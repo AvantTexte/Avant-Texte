@@ -34,5 +34,14 @@
     "tipo": "Sustantivo",
     "ejemplo_frances": "Nous sommes fin mai, en pleine retraite, en plein désastre.",
     "ejemplo_espanol": "Estamos a fines de mayo, en plena retirada, en pleno desastre."
+  },
+  {
+    "id": 5,
+    "capitulo": "Chapitre I",
+    "frances": "reconnaissance",
+    "espanol": "reconocimiento / exploración",
+    "tipo": "Sustantivo",
+    "ejemplo_frances": "Nous sommes encore cinquante équipages de Grande Reconnaissance.",
+    "ejemplo_espanol": "Aún somos cincuenta tripulaciones de Gran Reconocimiento."
   }
 ]

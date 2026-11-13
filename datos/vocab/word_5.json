@@ -1,7 +1,9 @@
 {
   "id": 5,
-  "frances": "mission",
-  "espanol": "misión",
+  "capitulo": "Chapitre I",
+  "frances": "reconnaissance",
+  "espanol": "reconocimiento / exploración",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 00:58:31"
+  "ejemplo_frances": "Nous sommes encore cinquante équipages de Grande Reconnaissance.",
+  "ejemplo_espanol": "Aún somos cincuenta tripulaciones de Gran Reconocimiento."
 }
