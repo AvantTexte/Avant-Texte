@@ -1,7 +1,9 @@
 {
   "id": 16,
-  "frances": "silence",
-  "espanol": "silencio",
+  "capitulo": "Chapitre V",
+  "frances": "palonnier",
+  "espanol": "pedal de dirección (timón)",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 01:01:28"
+  "ejemplo_frances": "Le volant est dur ; quant au palonnier, il est entièrement coincé !",
+  "ejemplo_espanol": "¡El volante está duro; en cuanto al pedal del timón, está totalmente atascado!"
 }

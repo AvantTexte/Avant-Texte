@@ -133,5 +133,14 @@
     "tipo": "Sustantivo",
     "ejemplo_frances": "J'appuie le bouton en vue du contrôle de mes mitrailleuses.",
     "ejemplo_espanol": "Presiono el botón para controlar mis ametralladoras."
+  },
+  {
+    "id": 16,
+    "capitulo": "Chapitre V",
+    "frances": "palonnier",
+    "espanol": "pedal de dirección (timón)",
+    "tipo": "Sustantivo",
+    "ejemplo_frances": "Le volant est dur ; quant au palonnier, il est entièrement coincé !",
+    "ejemplo_espanol": "¡El volante está duro; en cuanto al pedal del timón, está totalmente atascado!"
   }
 ]
