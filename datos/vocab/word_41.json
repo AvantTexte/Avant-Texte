@@ -1,7 +1,9 @@
 {
   "id": 41,
-  "frances": "soleil",
-  "espanol": "sol",
+  "capitulo": "Chapitre 2",
+  "frances": "exode",
+  "espanol": "éxodo",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 01:08:59"
+  "ejemplo_frances": "Il y a une contagion démente dans cet exode général.",
+  "ejemplo_espanol": "Hay un contagio demente en este éxodo general."
 }
