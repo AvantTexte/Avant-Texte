@@ -88,5 +88,14 @@
     "tipo": "Sustantivo",
     "ejemplo_frances": "Enveloppé dans ma solitude bien-aimée, afin d'y reconnaître pourquoi je dois mourir.",
     "ejemplo_espanol": "Envuelto en mi amada soledad, para reconocer en ella por qué debo morir."
+  },
+  {
+    "id": 11,
+    "capitulo": "Chapitre III",
+    "frances": "harnacher",
+    "espanol": "equiparse / arnesarse",
+    "tipo": "Verbo",
+    "ejemplo_frances": "On se harnache avec tant de soin pour griller vif.",
+    "ejemplo_espanol": "Uno se equipa con tanto cuidado para asarse vivo."
   }
 ]

@@ -1,7 +1,9 @@
 {
   "id": 11,
-  "frances": "enfance",
-  "espanol": "infancia",
-  "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 01:00:09"
+  "capitulo": "Chapitre III",
+  "frances": "harnacher",
+  "espanol": "equiparse / arnesarse",
+  "tipo": "Verbo",
+  "ejemplo_frances": "On se harnache avec tant de soin pour griller vif.",
+  "ejemplo_espanol": "Uno se equipa con tanto cuidado para asarse vivo."
 }
