@@ -313,5 +313,14 @@
     "tipo": "Sustantivo",
     "ejemplo_frances": "La saveur du pain partagé n'a point d'égale.",
     "ejemplo_espanol": "El sabor del pan compartido no tiene igual."
+  },
+  {
+    "id": 36,
+    "capitulo": "Chapitre XXVII",
+    "frances": "cathédrale",
+    "espanol": "catedral",
+    "tipo": "Sustantivo",
+    "ejemplo_frances": "On meurt pour une cathédrale. Non pour des pierres.",
+    "ejemplo_espanol": "Uno muere por una catedral. No por piedras."
   }
 ]

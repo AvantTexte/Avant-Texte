@@ -1,7 +1,9 @@
 {
   "id": 36,
-  "frances": "avion",
-  "espanol": "avión",
+  "capitulo": "Chapitre XXVII",
+  "frances": "cathédrale",
+  "espanol": "catedral",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 01:07:39"
+  "ejemplo_frances": "On meurt pour une cathédrale. Non pour des pierres.",
+  "ejemplo_espanol": "Uno muere por una catedral. No por piedras."
 }
