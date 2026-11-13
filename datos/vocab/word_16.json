@@ -1,9 +1,9 @@
 {
   "id": 16,
-  "capitulo": "Chapitre V",
-  "frances": "palonnier",
-  "espanol": "pedal de dirección (timón)",
+  "capitulo": "Chapitre 1",
+  "frances": "silence",
+  "espanol": "silencio",
   "tipo": "Sustantivo",
-  "ejemplo_frances": "Le volant est dur ; quant au palonnier, il est entièrement coincé !",
-  "ejemplo_espanol": "¡El volante está duro; en cuanto al pedal del timón, está totalmente atascado!"
+  "ejemplo_frances": "Le silence de l'altitude enveloppe le cockpit.",
+  "ejemplo_espanol": "El silencio de la altura envuelve la cabina."
 }
