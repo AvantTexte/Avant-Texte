@@ -124,5 +124,14 @@
     "tipo": "Sustantivo",
     "ejemplo_frances": "Nous montons vite : six mille sept cents mètres d'altitude.",
     "ejemplo_espanol": "Subimos rápido: seis mil setecientos metros de altitud."
+  },
+  {
+    "id": 15,
+    "capitulo": "Chapitre V",
+    "frances": "mitrailleuse",
+    "espanol": "ametralladora",
+    "tipo": "Sustantivo",
+    "ejemplo_frances": "J'appuie le bouton en vue du contrôle de mes mitrailleuses.",
+    "ejemplo_espanol": "Presiono el botón para controlar mis ametralladoras."
   }
 ]
