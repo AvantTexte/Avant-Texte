@@ -1,9 +1,9 @@
 {
   "id": 15,
-  "capitulo": "Chapitre V",
-  "frances": "mitrailleuse",
-  "espanol": "ametralladora",
+  "capitulo": "Chapitre 1",
+  "frances": "ombre",
+  "espanol": "sombra",
   "tipo": "Sustantivo",
-  "ejemplo_frances": "J'appuie le bouton en vue du contrôle de mes mitrailleuses.",
-  "ejemplo_espanol": "Presiono el botón para controlar mis ametralladoras."
+  "ejemplo_frances": "Une ombre s'étend sur la plaine de Champagne.",
+  "ejemplo_espanol": "Una sombra se extiende sobre la llanura de Champaña."
 }
