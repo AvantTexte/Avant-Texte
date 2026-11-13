@@ -1,24 +1,57 @@
-let vocabulary = [];
+let vocabulary = [
+    {
+        "id": 1,
+        "capitulo": "Chapitre I",
+        "frances": "camarade",
+        "espanol": "camarada / compañero",
+        "tipo": "Sustantivo",
+        "ejemplo_frances": "Des camarades, auprès de moi, parlent à voix basse.",
+        "ejemplo_espanol": "Unos camaradas, cerca de mí, hablan en voz baja."
+    },
+    {
+        "id": 2,
+        "capitulo": "Chapitre I",
+        "frances": "pilote",
+        "espanol": "piloto",
+        "tipo": "Sustantivo",
+        "ejemplo_frances": "Le pilote se retrouve seul face à la nuit et au ciel.",
+        "ejemplo_espanol": "El piloto se encuentra solo ante la noche y el cielo."
+    },
+    {
+        "id": 3,
+        "capitulo": "Chapitre II",
+        "frances": "solitude",
+        "espanol": "soledad",
+        "tipo": "Sustantivo",
+        "ejemplo_frances": "Enveloppé dans ma solitude bien-aimée pour comprendre.",
+        "ejemplo_espanol": "Envuelto en mi amada soledad para comprender."
+    }
+];
+
 let filteredVocabulary = [];
 let currentIndex = 0;
 let isFlipped = false;
 
 document.addEventListener("DOMContentLoaded", () => {
+    filteredVocabulary = [...vocabulary];
+    populateChapterDropdown();
+    showCard();
     loadVocabulary();
 });
 
 async function loadVocabulary() {
     try {
         const response = await fetch("datos/index.json");
-        if (!response.ok) throw new Error("Index no encontrado");
-        vocabulary = await response.json();
-        
-        populateChapterDropdown();
-        filterByChapter();
+        if (response.ok) {
+            const data = await response.json();
+            if (Array.isArray(data) && data.length > 0) {
+                vocabulary = data;
+                populateChapterDropdown();
+                filterByChapter();
+            }
+        }
     } catch (error) {
-        console.error("Error al cargar el vocabulario:", error);
-        document.getElementById("card-fr").innerText = "Guerre";
-        document.getElementById("card-es").innerText = "Guerra";
+        console.log("Usando vocabulario precargado.");
     }
 }
 

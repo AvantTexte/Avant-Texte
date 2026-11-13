@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Liseur - Francés con Pilote de guerre</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="app-container">
@@ -15,36 +15,42 @@
                 <span class="flag">🇫🇷</span>
                 <h1>Proyecto Liseur</h1>
             </div>
-            <!-- Filtro de Capítulos -->
+            
             <div class="chapter-filter-container">
                 <label for="chapter-select">📖 Capítulo:</label>
                 <select id="chapter-select" onchange="filterByChapter()">
-                    <option value="ALL">Todos los Capítulos</option>
+                    <option value="ALL">Cargando capítulos...</option>
                 </select>
             </div>
+
             <div class="progress-bar-container">
                 <div class="progress-bar" id="progress-bar"></div>
             </div>
         </header>
 
-        <!-- Main Content Area -->
+        <!-- Flashcard Area -->
         <main class="flashcard-section">
             <div class="card-container" id="card-container" onclick="flipCard()">
                 <div class="card-inner" id="card-inner">
                     <!-- Frente (Francés) -->
                     <div class="card-front">
-                        <span class="chapter-badge" id="card-chapter">Chapitre I</span>
-                        <span class="badge" id="card-type">Sustantivo</span>
+                        <div class="card-badges">
+                            <span class="chapter-badge" id="card-chapter">Chapitre I</span>
+                            <span class="badge" id="card-type">Sustantivo</span>
+                        </div>
                         <h2 class="word-fr" id="card-fr">Chargement...</h2>
-                        <p class="click-hint">Haz clic para ver traducción 🔄</p>
+                        <p class="click-hint">Toca la tarjeta para traducir 🔄</p>
                         <button class="audio-btn" onclick="event.stopPropagation(); speakWord();">
-                            🔊 Escuchar
+                            🔊 Escuchar Pronunciación
                         </button>
                     </div>
+
                     <!-- Reverso (Español + Frase de la novela) -->
                     <div class="card-back">
+                        <span class="back-title">Traducción en Español:</span>
                         <h3 class="word-es" id="card-es">Cargando...</h3>
                         <div class="quote-box">
+                            <span class="quote-label">📖 Cita literal de Saint-Exupéry:</span>
                             <p class="quote-fr" id="quote-fr">""</p>
                             <p class="quote-es" id="quote-es">""</p>
                         </div>
@@ -54,14 +60,14 @@
 
             <!-- Botones de Acción -->
             <div class="action-buttons">
-                <button class="btn btn-again" onclick="nextCard(false)">❌ Repasar luego</button>
-                <button class="btn btn-know" onclick="nextCard(true)">✅ La conozco</button>
+                <button class="btn btn-again" onclick="nextCard(false)">❌ Repasar Luego</button>
+                <button class="btn btn-know" onclick="nextCard(true)">✅ Aprendida</button>
             </div>
         </main>
 
         <!-- Footer Stats -->
         <footer class="app-footer">
-            <p>Ficha <span id="current-index">1</span> de <span id="total-cards">0</span> | <span id="chapter-name">Pilote de guerre</span></p>
+            <p>Ficha <span id="current-index">1</span> de <span id="total-cards">0</span> | <strong>Pilote de guerre</strong></p>
         </footer>
     </div>
 
