@@ -1,7 +1,9 @@
 {
   "id": 25,
-  "frances": "soleil",
-  "espanol": "sol",
+  "capitulo": "Chapitre XII",
+  "frances": "administration",
+  "espanol": "administración",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 01:04:09"
+  "ejemplo_frances": "Nous vivons dans le ventre aveugle d'une administration.",
+  "ejemplo_espanol": "Vivimos en el vientre ciego de una administración."
 }
