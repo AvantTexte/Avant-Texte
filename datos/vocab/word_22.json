@@ -1,7 +1,9 @@
 {
   "id": 22,
-  "frances": "ciel",
-  "espanol": "cielo",
+  "capitulo": "Chapitre IX",
+  "frances": "parachute",
+  "espanol": "paracaídas",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 01:03:19"
+  "ejemplo_frances": "Mon genou a été accroché au cours du saut en parachute.",
+  "ejemplo_espanol": "Mi rodilla se enganchó durante el salto en paracaídas."
 }
