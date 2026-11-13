@@ -268,5 +268,14 @@
     "tipo": "Sustantivo",
     "ejemplo_frances": "Le premier acte de résistance, s'il survient trop tard, est toujours perdant.",
     "ejemplo_espanol": "El primer acto de resistencia, si ocurre demasiado tarde, siempre es perdedor."
+  },
+  {
+    "id": 31,
+    "capitulo": "Chapitre XVIII",
+    "frances": "sacrifice",
+    "espanol": "sacrificio",
+    "tipo": "Sustantivo",
+    "ejemplo_frances": "C'est, à certain heures, pour le combattant, l'acceptation pure et simple de la mort.",
+    "ejemplo_espanol": "Es, a ciertas horas, para el combatiente, la aceptación pura y simple de la muerte."
   }
 ]
