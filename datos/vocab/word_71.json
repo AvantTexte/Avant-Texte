@@ -1,7 +1,9 @@
 {
   "id": 71,
-  "frances": "nuit",
-  "espanol": "noche",
+  "capitulo": "Chapitre 2",
+  "frances": "angoisse (n°2)",
+  "espanol": "angustia",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 01:17:13"
+  "ejemplo_frances": "L'angoisse commençait de répandre sur son visage une clarté égale.",
+  "ejemplo_espanol": "La angustia comenzaba a extender sobre su rostro una claridad pareja."
 }
