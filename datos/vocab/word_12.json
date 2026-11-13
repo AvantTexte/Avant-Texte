@@ -1,9 +1,9 @@
 {
   "id": 12,
-  "capitulo": "Chapitre III",
-  "frances": "oxygène",
-  "espanol": "oxígeno",
+  "capitulo": "Chapitre 1",
+  "frances": "secours",
+  "espanol": "socorro",
   "tipo": "Sustantivo",
-  "ejemplo_frances": "D'organiser le circuit d'oxygène, le circuit de chauffage.",
-  "ejemplo_espanol": "Organizar el circuito de oxígeno, el circuito de calefacción."
+  "ejemplo_frances": "Lancer un appel de secours dans le chaos de la bataille.",
+  "ejemplo_espanol": "Lanzar una llamada de socorro en el caos de la batalla."
 }
