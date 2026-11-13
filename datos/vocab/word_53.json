@@ -1,7 +1,9 @@
 {
   "id": 53,
-  "frances": "mission",
-  "espanol": "misión",
+  "capitulo": "Chapitre 2",
+  "frances": "vol (n°2)",
+  "espanol": "vuelo",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 01:12:19"
+  "ejemplo_frances": "Un vol de reconnaissance au-dessus du territoire ennemi.",
+  "ejemplo_espanol": "Un vuelo de reconocimiento sobre el territorio enemigo."
 }
