@@ -1,7 +1,9 @@
 {
   "id": 12,
-  "frances": "secours",
-  "espanol": "socorro",
+  "capitulo": "Chapitre III",
+  "frances": "oxygène",
+  "espanol": "oxígeno",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 01:00:25"
+  "ejemplo_frances": "D'organiser le circuit d'oxygène, le circuit de chauffage.",
+  "ejemplo_espanol": "Organizar el circuito de oxígeno, el circuito de calefacción."
 }

@@ -97,5 +97,14 @@
     "tipo": "Verbo",
     "ejemplo_frances": "On se harnache avec tant de soin pour griller vif.",
     "ejemplo_espanol": "Uno se equipa con tanto cuidado para asarse vivo."
+  },
+  {
+    "id": 12,
+    "capitulo": "Chapitre III",
+    "frances": "oxygène",
+    "espanol": "oxígeno",
+    "tipo": "Sustantivo",
+    "ejemplo_frances": "D'organiser le circuit d'oxygène, le circuit de chauffage.",
+    "ejemplo_espanol": "Organizar el circuito de oxígeno, el circuito de calefacción."
   }
 ]
