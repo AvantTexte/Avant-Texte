@@ -1,9 +1,9 @@
 {
   "id": 3,
-  "capitulo": "Chapitre I",
-  "frances": "enfance",
-  "espanol": "infancia",
+  "capitulo": "Chapitre 1",
+  "frances": "vol",
+  "espanol": "vuelo",
   "tipo": "Sustantivo",
-  "ejemplo_frances": "Je m'enferme avec tant de joie dans cette enfance bien protégée !",
-  "ejemplo_espanol": "¡Me encierro con tanta alegría en esta infancia bien protegida!"
+  "ejemplo_frances": "Un vol de reconnaissance au-dessus du territoire ennemi.",
+  "ejemplo_espanol": "Un vuelo de reconocimiento sobre el territorio enemigo."
 }
