@@ -1,7 +1,9 @@
 {
   "id": 74,
-  "frances": "arbre",
-  "espanol": "árbol",
-  "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 01:18:05"
+  "capitulo": "Chapitre 2",
+  "frances": "harnacher (n°2)",
+  "espanol": "equiparse",
+  "tipo": "Verbo",
+  "ejemplo_frances": "On se harnache avec tant de soin pour griller vif.",
+  "ejemplo_espanol": "Uno se equipa con tanto cuidado para asarse vivo."
 }
