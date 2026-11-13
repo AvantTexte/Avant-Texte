@@ -79,5 +79,14 @@
     "tipo": "Sustantivo",
     "ejemplo_frances": "Je suis choqué par une évidence: la vie de l'Esprit est intermittente.",
     "ejemplo_espanol": "Me choca una evidencia: la vida del Espíritu es intermitente."
+  },
+  {
+    "id": 10,
+    "capitulo": "Chapitre II",
+    "frances": "solitude",
+    "espanol": "soledad",
+    "tipo": "Sustantivo",
+    "ejemplo_frances": "Enveloppé dans ma solitude bien-aimée, afin d'y reconnaître pourquoi je dois mourir.",
+    "ejemplo_espanol": "Envuelto en mi amada soledad, para reconocer en ella por qué debo morir."
   }
 ]
