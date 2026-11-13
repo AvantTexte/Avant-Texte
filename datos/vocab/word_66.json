@@ -1,7 +1,9 @@
 {
   "id": 66,
-  "frances": "pilote",
-  "espanol": "piloto",
+  "capitulo": "Chapitre 2",
+  "frances": "silence (n°2)",
+  "espanol": "silencio",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 01:15:50"
+  "ejemplo_frances": "Le silence de l'altitude enveloppe le cockpit.",
+  "ejemplo_espanol": "El silencio de la altura envuelve la cabina."
 }
