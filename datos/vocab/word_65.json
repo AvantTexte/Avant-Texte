@@ -1,7 +1,9 @@
 {
   "id": 65,
-  "frances": "guerre",
-  "espanol": "guerra",
+  "capitulo": "Chapitre 2",
+  "frances": "ombre (n°2)",
+  "espanol": "sombra",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 01:15:34"
+  "ejemplo_frances": "Une ombre s'étend sur la plaine de Champagne.",
+  "ejemplo_espanol": "Una sombra se extiende sobre la llanura de Champaña."
 }
