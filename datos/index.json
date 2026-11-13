@@ -304,5 +304,14 @@
     "tipo": "Sustantivo",
     "ejemplo_frances": "Rien n'abîmera cette fraternité. Je suis de mon Groupe plus que jamais.",
     "ejemplo_espanol": "Nada arruinará esta fraternidad. Soy de mi Grupo más que nunca."
+  },
+  {
+    "id": 35,
+    "capitulo": "Chapitre XXIV",
+    "frances": "pain",
+    "espanol": "pan",
+    "tipo": "Sustantivo",
+    "ejemplo_frances": "La saveur du pain partagé n'a point d'égale.",
+    "ejemplo_espanol": "El sabor del pan compartido no tiene igual."
   }
 ]
