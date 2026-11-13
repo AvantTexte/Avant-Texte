@@ -229,3 +229,73 @@ function speakWordText(text) {
     utterance.rate = 0.9;
     window.speechSynthesis.speak(utterance);
 }
+
+
+// === LÓGICA DE NAVEGACIÓN Y DASHBOARD DE ESTADÍSTICAS ===
+document.addEventListener('DOMContentLoaded', () => {
+    const tabCards = document.getElementById('tab-cards');
+    const tabQuiz = document.getElementById('tab-quiz');
+    const tabStats = document.getElementById('tab-stats');
+
+    const flashcardView = document.getElementById('flashcard-view') || document.querySelector('.card-container');
+    const quizView = document.getElementById('quiz-view');
+    const statsView = document.getElementById('stats-view');
+
+    function switchTab(activeTab, activeView) {
+        [tabCards, tabQuiz, tabStats].forEach(t => t && t.classList.remove('active'));
+        [flashcardView, quizView, statsView].forEach(v => v && (v.style.display = 'none'));
+
+        if (activeTab) activeTab.classList.add('active');
+        if (activeView) activeView.style.display = 'block';
+
+        if (activeView === statsView) {
+            updateStatsView();
+        }
+    }
+
+    if (tabCards) tabCards.addEventListener('click', () => switchTab(tabCards, flashcardView));
+    if (tabQuiz) tabQuiz.addEventListener('click', () => switchTab(tabQuiz, quizView));
+    if (tabStats) tabStats.addEventListener('click', () => switchTab(tabStats, statsView));
+
+    const btnReset = document.getElementById('btn-reset-stats');
+    if (btnReset) {
+        btnReset.addEventListener('click', () => {
+            if (confirm('¿Deseas reiniciar todas tus estadísticas de estudio?')) {
+                localStorage.removeItem('user_xp');
+                localStorage.removeItem('cards_seen_count');
+                localStorage.removeItem('quiz_correct_count');
+                localStorage.removeItem('quiz_total_count');
+                updateStatsView();
+            }
+        });
+    }
+});
+
+function updateStatsView() {
+    const xp = parseInt(localStorage.getItem('user_xp') || '0');
+    const cardsSeen = parseInt(localStorage.getItem('cards_seen_count') || '0');
+    const quizCorrect = parseInt(localStorage.getItem('quiz_correct_count') || '0');
+    const quizTotal = parseInt(localStorage.getItem('quiz_total_count') || '0');
+
+    const elCards = document.getElementById('stat-cards-learned');
+    const elXp = document.getElementById('stat-total-xp');
+    const elAccuracy = document.getElementById('stat-accuracy');
+    const elTime = document.getElementById('stat-study-time');
+    const elFill = document.getElementById('global-progress-fill');
+    const elProgressText = document.getElementById('progress-percentage-text');
+
+    const totalCards = 1024;
+    const progressPct = Math.min(100, Math.round((cardsSeen / totalCards) * 100));
+
+    if (elCards) elCards.textContent = `${cardsSeen} / ${totalCards}`;
+    if (elXp) elXp.textContent = `${xp} XP`;
+    
+    const accuracyPct = quizTotal > 0 ? Math.round((quizCorrect / quizTotal) * 100) : 0;
+    if (elAccuracy) elAccuracy.textContent = `${accuracyPct}%`;
+
+    const estMinutes = Math.round((cardsSeen * 0.5) + (quizTotal * 0.8));
+    if (elTime) elTime.textContent = `${estMinutes} min`;
+
+    if (elFill) elFill.style.width = `${progressPct}%`;
+    if (elProgressText) elProgressText.textContent = `${progressPct}% del vocabulario del libro completado`;
+}

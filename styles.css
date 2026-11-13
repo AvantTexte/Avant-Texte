@@ -438,3 +438,76 @@ body {
     color: #718096;
     font-weight: 700;
 }
+
+
+/* === ESTILOS DASHBOARD DE ESTADÍSTICAS === */
+.stats-container {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 20px;
+}
+.stats-subtitle {
+  color: #a0aec0;
+  margin-bottom: 24px;
+}
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-bottom: 28px;
+}
+.stat-card {
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+}
+.stat-icon {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #6366f1;
+}
+.stat-label {
+  font-size: 0.85rem;
+  color: #cbd5e1;
+  margin-top: 4px;
+}
+.chapter-progress-section {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+.progress-bar-container {
+  background: #334155;
+  height: 16px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 12px 0;
+}
+.progress-bar-fill {
+  background: linear-gradient(90deg, #6366f1, #a855f7);
+  height: 100%;
+  transition: width 0.5s ease-in-out;
+}
+.btn-secondary-danger {
+  background: transparent;
+  border: 1px solid #ef4444;
+  color: #f87171;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn-secondary-danger:hover {
+  background: #ef4444;
+  color: #fff;
+}

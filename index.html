@@ -74,7 +74,51 @@
                 <button class="btn btn-again" onclick="nextCard(false)">❌ Repasar Luego</button>
                 <button class="btn btn-know" onclick="nextCard(true)">✅ Aprendida (+5 XP)</button>
             </div>
-        </main>
+        
+    <!-- VISTA DE ESTADÍSTICAS Y PROGRESO -->
+    <section id="stats-view" class="view-section" style="display: none;">
+      <div class="stats-container">
+        <h2>📊 Tu Panel de Progreso & Métricas</h2>
+        <p class="stats-subtitle">Seguimiento de vocabulario de <em>Pilote de guerre</em></p>
+        
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-icon">🎴</div>
+            <div class="stat-value" id="stat-cards-learned">0 / 1024</div>
+            <div class="stat-label">Tarjetas Vistas</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">⚡</div>
+            <div class="stat-value" id="stat-total-xp">0 XP</div>
+            <div class="stat-label">Experiencia Acumulada</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">🎯</div>
+            <div class="stat-value" id="stat-accuracy">0%</div>
+            <div class="stat-label">Precisión en Quiz</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">⏱️</div>
+            <div class="stat-value" id="stat-study-time">0 min</div>
+            <div class="stat-label">Tiempo Estimado</div>
+          </div>
+        </div>
+
+        <div class="chapter-progress-section">
+          <h3>📖 Progreso General por Capítulos (I - XXVII)</h3>
+          <div class="progress-bar-container">
+            <div class="progress-bar-fill" id="global-progress-fill" style="width: 0%;"></div>
+          </div>
+          <p id="progress-percentage-text">0% del vocabulario del libro completado</p>
+        </div>
+
+        <div class="stats-actions">
+          <button id="btn-reset-stats" class="btn-secondary-danger">🔄 Reiniciar Métricas</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
 
         <!-- VISTA 2: Quiz de Opción Múltiple -->
         <main class="quiz-section hidden" id="section-quiz">
@@ -95,7 +139,51 @@
                     <button class="btn btn-next-quiz" onclick="nextQuizQuestion()">Siguiente Pregunta ➔</button>
                 </div>
             </div>
-        </main>
+        
+    <!-- VISTA DE ESTADÍSTICAS Y PROGRESO -->
+    <section id="stats-view" class="view-section" style="display: none;">
+      <div class="stats-container">
+        <h2>📊 Tu Panel de Progreso & Métricas</h2>
+        <p class="stats-subtitle">Seguimiento de vocabulario de <em>Pilote de guerre</em></p>
+        
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-icon">🎴</div>
+            <div class="stat-value" id="stat-cards-learned">0 / 1024</div>
+            <div class="stat-label">Tarjetas Vistas</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">⚡</div>
+            <div class="stat-value" id="stat-total-xp">0 XP</div>
+            <div class="stat-label">Experiencia Acumulada</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">🎯</div>
+            <div class="stat-value" id="stat-accuracy">0%</div>
+            <div class="stat-label">Precisión en Quiz</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">⏱️</div>
+            <div class="stat-value" id="stat-study-time">0 min</div>
+            <div class="stat-label">Tiempo Estimado</div>
+          </div>
+        </div>
+
+        <div class="chapter-progress-section">
+          <h3>📖 Progreso General por Capítulos (I - XXVII)</h3>
+          <div class="progress-bar-container">
+            <div class="progress-bar-fill" id="global-progress-fill" style="width: 0%;"></div>
+          </div>
+          <p id="progress-percentage-text">0% del vocabulario del libro completado</p>
+        </div>
+
+        <div class="stats-actions">
+          <button id="btn-reset-stats" class="btn-secondary-danger">🔄 Reiniciar Métricas</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
 
         <!-- Footer -->
         <footer class="app-footer">
