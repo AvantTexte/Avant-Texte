@@ -241,5 +241,14 @@
     "tipo": "Sustantivo",
     "ejemplo_frances": "Une civilisation est un héritage de croyances, de coutumes et de connaissances.",
     "ejemplo_espanol": "Una civilización es un legado de creencias, costumbres y conocimientos."
+  },
+  {
+    "id": 28,
+    "capitulo": "Chapitre XV",
+    "frances": "exode",
+    "espanol": "éxodo / evacuación",
+    "tipo": "Sustantivo",
+    "ejemplo_frances": "Il est une contagion démente dans cet exode.",
+    "ejemplo_espanol": "Hay una contagio demente en este éxodo."
   }
 ]

@@ -1,7 +1,9 @@
 {
   "id": 28,
-  "frances": "secours",
-  "espanol": "socorro",
+  "capitulo": "Chapitre XV",
+  "frances": "exode",
+  "espanol": "éxodo / evacuación",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 01:05:11"
+  "ejemplo_frances": "Il est une contagion démente dans cet exode.",
+  "ejemplo_espanol": "Hay una contagio demente en este éxodo."
 }
