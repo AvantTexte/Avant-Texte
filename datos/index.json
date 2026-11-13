@@ -214,5 +214,14 @@
     "tipo": "Sustantivo",
     "ejemplo_frances": "J'y goûtais la béatitude du repos après les journées dures.",
     "ejemplo_espanol": "Apaladeaba allí la beatitud del descanso tras las jornadas duras."
+  },
+  {
+    "id": 25,
+    "capitulo": "Chapitre XII",
+    "frances": "administration",
+    "espanol": "administración",
+    "tipo": "Sustantivo",
+    "ejemplo_frances": "Nous vivons dans le ventre aveugle d'une administration.",
+    "ejemplo_espanol": "Vivimos en el vientre ciego de una administración."
   }
 ]
