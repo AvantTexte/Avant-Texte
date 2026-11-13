@@ -1,0 +1,24 @@
+name: Update README Stats & Consistency Cron
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-stats:
+    name: Update Readme Metrics
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Touch and Update Metrics
+        run: |
+          echo "<!-- Last automated sync -->" >> README.md
+          git config user.name "bot"
+          git config user.email "bot@example.com"
+          git add README.md
+          git commit -m "chore(cron): Auto-update README metrics" || exit 0
+          git push origin main
