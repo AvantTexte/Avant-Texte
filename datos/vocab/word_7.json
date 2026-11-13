@@ -1,7 +1,9 @@
 {
   "id": 7,
-  "frances": "nuit",
-  "espanol": "noche",
+  "capitulo": "Chapitre II",
+  "frances": "prudence",
+  "espanol": "prudencia",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 00:59:03"
+  "ejemplo_frances": "On lui avait tellement parlé de la prudence juive.",
+  "ejemplo_espanol": "Le habían hablado tanto de la prudencia judía."
 }
