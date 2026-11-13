@@ -295,5 +295,14 @@
     "tipo": "Adjetivo",
     "ejemplo_frances": "Je me découvre invulnérable. Je me sens comme vainqueur !",
     "ejemplo_espanol": "Me descubro invulnerable. ¡Me siento como vencedor!"
+  },
+  {
+    "id": 34,
+    "capitulo": "Chapitre XXII",
+    "frances": "fraternité",
+    "espanol": "fraternidad",
+    "tipo": "Sustantivo",
+    "ejemplo_frances": "Rien n'abîmera cette fraternité. Je suis de mon Groupe plus que jamais.",
+    "ejemplo_espanol": "Nada arruinará esta fraternidad. Soy de mi Grupo más que nunca."
   }
 ]

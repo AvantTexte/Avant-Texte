@@ -1,7 +1,9 @@
 {
   "id": 34,
-  "frances": "pilote",
-  "espanol": "piloto",
+  "capitulo": "Chapitre XXII",
+  "frances": "fraternité",
+  "espanol": "fraternidad",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 01:07:06"
+  "ejemplo_frances": "Rien n'abîmera cette fraternité. Je suis de mon Groupe plus que jamais.",
+  "ejemplo_espanol": "Nada arruinará esta fraternidad. Soy de mi Grupo más que nunca."
 }
