@@ -1,7 +1,9 @@
 {
   "id": 61,
-  "frances": "secrétaires",
-  "espanol": "secretarios",
+  "capitulo": "Chapitre 2",
+  "frances": "enfance (n°2)",
+  "espanol": "infancia",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 01:14:32"
+  "ejemplo_frances": "Je m'enferme avec tant de joie dans cette enfance bien protégée.",
+  "ejemplo_espanol": "Me encierro con tanta alegría en esta infancia bien protegida."
 }
