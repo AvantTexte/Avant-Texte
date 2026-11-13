@@ -61,5 +61,14 @@
     "tipo": "Sustantivo",
     "ejemplo_frances": "On lui avait tellement parlé de la prudence juive.",
     "ejemplo_espanol": "Le habían hablado tanto de la prudencia judía."
+  },
+  {
+    "id": 8,
+    "capitulo": "Chapitre II",
+    "frances": "angoisse",
+    "espanol": "angustia",
+    "tipo": "Sustantivo",
+    "ejemplo_frances": "L'angoisse commençait de répandre sur son visage une clarté égale.",
+    "ejemplo_espanol": "La angustia comenzaba a extender sobre su rostro una claridad pareja."
   }
 ]
