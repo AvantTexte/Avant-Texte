@@ -1,7 +1,9 @@
 {
   "id": 49,
-  "frances": "guerre",
-  "espanol": "guerra",
+  "capitulo": "Chapitre 2",
+  "frances": "cathédrale",
+  "espanol": "catedral",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 01:11:14"
+  "ejemplo_frances": "On meurt pour une cathédrale. Non pour des pierres.",
+  "ejemplo_espanol": "Uno muere por una catedral. No por piedras."
 }
