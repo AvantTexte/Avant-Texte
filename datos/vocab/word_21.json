@@ -1,7 +1,9 @@
 {
   "id": 21,
-  "frances": "mission",
-  "espanol": "misión",
+  "capitulo": "Chapitre VIII",
+  "frances": "évanouissement",
+  "espanol": "desmayo / desvanecimiento",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 01:03:01"
+  "ejemplo_frances": "Elle se traduit par une euphorie vague qui aboutit à l'évanouissement.",
+  "ejemplo_espanol": "Se traduce en una euforia vaga que desemboca en el desmayo."
 }
