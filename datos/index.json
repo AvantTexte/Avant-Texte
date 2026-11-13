@@ -169,5 +169,14 @@
     "tipo": "Sustantivo / Verbo",
     "ejemplo_frances": "Je la vois sourire, tout simplement.",
     "ejemplo_espanol": "La veo sonreír, simplemente."
+  },
+  {
+    "id": 20,
+    "capitulo": "Chapitre VIII",
+    "frances": "chasseur",
+    "espanol": "caza (avión de combate)",
+    "tipo": "Sustantivo",
+    "ejemplo_frances": "Six chasseurs, six, à l'avant-gauche !",
+    "ejemplo_espanol": "¡Seis cazas, seis, al frente a la izquierda!"
   }
 ]

@@ -1,7 +1,9 @@
 {
   "id": 20,
-  "frances": "avion",
-  "espanol": "avión",
+  "capitulo": "Chapitre VIII",
+  "frances": "chasseur",
+  "espanol": "caza (avión de combate)",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 01:02:39"
+  "ejemplo_frances": "Six chasseurs, six, à l'avant-gauche !",
+  "ejemplo_espanol": "¡Seis cazas, seis, al frente a la izquierda!"
 }
