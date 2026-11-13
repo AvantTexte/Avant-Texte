@@ -1,7 +1,9 @@
 {
   "id": 57,
-  "frances": "soleil",
-  "espanol": "sol",
+  "capitulo": "Chapitre 2",
+  "frances": "nuit (n°2)",
+  "espanol": "noche",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 01:13:26"
+  "ejemplo_frances": "La nuit descend douce et grave sur le terrain.",
+  "ejemplo_espanol": "La noche desciende suave y grave sobre el campo."
 }
