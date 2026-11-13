@@ -1,9 +1,9 @@
 {
   "id": 13,
-  "capitulo": "Chapitre III",
-  "frances": "laryngophone",
-  "espanol": "laringófono",
+  "capitulo": "Chapitre 1",
+  "frances": "secrétaires",
+  "espanol": "secretarios",
   "tipo": "Sustantivo",
-  "ejemplo_frances": "Reste à essayer les laryngophones... M'entendez bien ?",
-  "ejemplo_espanol": "Falta probar los laringófonos... ¿Me oye bien?"
+  "ejemplo_frances": "Les secrétaires rédigent patiemment les ordres du groupe.",
+  "ejemplo_espanol": "Los secretarios redactan pacientemente las órdenes del grupo."
 }
