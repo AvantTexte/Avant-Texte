@@ -1,7 +1,9 @@
 {
   "id": 37,
-  "frances": "mission",
-  "espanol": "misión",
+  "capitulo": "Chapitre 1",
+  "frances": "fécondité",
+  "espanol": "fecundidad",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 01:07:54"
+  "ejemplo_frances": "Je goûtais la béatitude et la fécondité du repos.",
+  "ejemplo_espanol": "Saboreaba la beatitud y la fecundidad del descanso."
 }
