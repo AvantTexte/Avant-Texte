@@ -1,0 +1,15 @@
+{
+  "name": "Proyecto Liseur - Francés con Pilote de guerre",
+  "short_name": "Liseur",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1cb0f6",
+  "icons": [
+    {
+      "src": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f1eb-1f1f7.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    }
+  ]
+}

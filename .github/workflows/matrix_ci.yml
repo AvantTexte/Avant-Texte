@@ -1,0 +1,36 @@
+name: Cross-Platform Matrix CI/CD & Validation
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  matrix-build:
+    name: Build & Test (${{ matrix.os }} - Py ${{ matrix.python-version }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+        python-version: ['3.10', '3.11', '3.12']
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Validate JSON Dataset Schema
+        run: |
+          python3 -c "import json, glob; [json.load(open(f, encoding='utf-8')) for f in glob.glob('datos/*.json') + glob.glob('datos/vocab/*.json')]; print('✅ All JSON files validated!')"
+
+      - name: Run Unit Tests
+        run: |
+          if [ -f tests/test_vocab.py ]; then
+            python3 -m unittest discover -s tests
+          fi
