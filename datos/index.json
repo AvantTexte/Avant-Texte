@@ -70,5 +70,14 @@
     "tipo": "Sustantivo",
     "ejemplo_frances": "L'angoisse commençait de répandre sur son visage une clarté égale.",
     "ejemplo_espanol": "La angustia comenzaba a extender sobre su rostro una claridad pareja."
+  },
+  {
+    "id": 9,
+    "capitulo": "Chapitre II",
+    "frances": "esprit",
+    "espanol": "espíritu / mente",
+    "tipo": "Sustantivo",
+    "ejemplo_frances": "Je suis choqué par une évidence: la vie de l'Esprit est intermittente.",
+    "ejemplo_espanol": "Me choca una evidencia: la vida del Espíritu es intermitente."
   }
 ]
