@@ -1,7 +1,9 @@
 {
   "id": 48,
-  "frances": "silence",
-  "espanol": "silencio",
+  "capitulo": "Chapitre 2",
+  "frances": "pain",
+  "espanol": "pan",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 01:10:57"
+  "ejemplo_frances": "La saveur du pain partagé n'a point d'égale sur terre.",
+  "ejemplo_espanol": "El sabor del pan compartido no tiene igual en la tierra."
 }
