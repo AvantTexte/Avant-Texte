@@ -1,7 +1,9 @@
 {
   "id": 35,
-  "frances": "vol",
-  "espanol": "vuelo",
+  "capitulo": "Chapitre XXIV",
+  "frances": "pain",
+  "espanol": "pan",
   "tipo": "Sustantivo",
-  "creado_en": "2026-11-09 01:07:24"
+  "ejemplo_frances": "La saveur du pain partagé n'a point d'égale.",
+  "ejemplo_espanol": "El sabor del pan compartido no tiene igual."
 }
