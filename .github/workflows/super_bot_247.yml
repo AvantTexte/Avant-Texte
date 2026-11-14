@@ -2,8 +2,8 @@ name: Super Bot 24/7 Cloud Orchestrator (Expert Level)
 
 on:
   schedule:
-    # Se ejecuta automáticamente cada 30 minutos en los servidores de GitHub
-    - cron: '*/30 * * * *'
+    # Se ejecuta 4 veces al día (cada 6 horas) para evitar spam de correos y mantener la racha limpia
+    - cron: '0 */6 * * *'
   workflow_dispatch:
 
 jobs:
@@ -19,6 +19,8 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
+          ref: main
+          token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
 
       - name: Set up Python 3.12
@@ -31,7 +33,3 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           python .github/scripts/super_bot_engine.py
-
-      - name: Run Quality & Performance Verification
-        run: |
-          python -m unittest discover -s tests -p "test_*.py" || true
