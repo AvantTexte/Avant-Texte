@@ -23,7 +23,7 @@ jobs:
           echo "ACCENTS_CHECK=OK" >> $GITHUB_OUTPUT
 
       - name: Post PR Review Comment
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         with:
           script: |
             const comment = `## 🤖 Automated PR Quality Audit & Code Review
